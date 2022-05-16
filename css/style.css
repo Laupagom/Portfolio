@@ -86,3 +86,13 @@ img {
             flex: 0 0 calc(100%);
   }
 }
+@font-face {
+  font-family: "GeneralSans-Regular";
+  font-weight: 300;
+  src: url("../../typography/GeneralSans-Regular.eot") format("eot"), url("../../typography/GeneralSans-Regular.ttf") format("ttf"), url("../../typography/GeneralSans-Regular.woff") format("woff"), url("../../typography/GeneralSans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GeneralSans-Italic";
+  font-weight: 300;
+  src: url("../../typography/GeneralSans-Italic.eot") format("eot"), url("../../typography/GeneralSans-Italic.ttf") format("ttf"), url("../../typography/GeneralSans-Italic.woff") format("woff"), url("../../typography/GeneralSans-Italic.woff2") format("woff2");
+}
