@@ -23,8 +23,26 @@ h4,
 h5,
 h6
 p {
+    font-family: 'GeneralSans-Regular';
     color: $black;
-    &:hover {
-        color: $grey;
-    }
+}
+
+h1 {
+    @include fontStyle (100px, 150px);
+}
+
+h2 {
+    @include fontStyle (40px, 50px);
+}
+
+h3 {
+    @include fontStyle (30px, 40px);
+}
+
+h4 {
+    @include fontStyle (15px, 20px);
+}
+
+p {
+    @include fontStyle (15px, 20px);
 }
