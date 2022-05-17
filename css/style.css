@@ -40,45 +40,13 @@
             flex: 0 0 calc(25%);
   }
 }
-@media all and (max-width: 849px) {
-  .grid__cell--100 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
-  .grid__cell--75 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
-  .grid__cell--66 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
-  .grid__cell--50 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
-  .grid__cell--33 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
-  .grid__cell--25 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
-}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  padding: 0px;
+  padding: 15px;
   margin: 0px;
 }
 
@@ -86,19 +54,57 @@ img {
   max-width: 100%;
 }
 
+.button__topbar {
+  color: #000000;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "GeneralSans-Light";
+  background-color: #00000000;
+  border: none;
+  text-align: right;
+  color: #C4C4C4;
+}
+@media all and (max-width: 849px) {
+  .button__topbar {
+    text-align: center;
+    padding-right: 20px;
+  }
+}
+.button__topbar--contact {
+  color: #000000;
+  font-size: 15px;
+  line-height: 60px;
+  text-decoration: none;
+  text-align: right;
+}
+
+.topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.topbar > *:first-child {
+  margin-right: auto;
+}
+
 body.dark__mode {
   background-color: #000000;
   color: #FFFFFF;
 }
 body.dark__mode a {
-  color: #000000;
+  color: #C4C4C4;
 }
 body.dark__mode button {
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: none;
+  color: #C4C4C4;
 }
-body.dark__mode p,
-body.dark__mode h1 {
+body.dark__mode h1,
+body.dark__mode h2,
+body.dark__mode h3,
+body.dark__mode h4,
+body.dark__mode h5,
+body.dark__mode h6,
+body.dark__mode p {
   color: #FFFFFF;
 }
 
@@ -107,11 +113,11 @@ body.light__mode {
   color: #000000;
 }
 body.light__mode a {
-  color: #000000;
+  color: #C4C4C4;
 }
 body.light__mode button {
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: none;
+  color: #C4C4C4;
 }
 
 @font-face {
@@ -132,15 +138,16 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
   font-family: "GeneralSans-Light";
   color: #000000;
 }
 
 h1 {
   color: #000000;
-  font-size: 100px;
-  line-height: 150px;
+  font-size: 70px;
+  line-height: 70px;
 }
 
 h2 {

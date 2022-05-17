@@ -28,13 +28,14 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
     font-family: 'GeneralSans-Light';
     color: $black;
 }
 
 h1 {
-    @include fontStyle (100px, 150px);
+    @include fontStyle (70px, 70px);
 }
 
 h2 {

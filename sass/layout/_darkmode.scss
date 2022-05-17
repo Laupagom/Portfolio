@@ -4,14 +4,19 @@ body.dark__mode {
     color: $white;
 
     a {
-        color: $black;
+        color: $grey;
     }
     button {
-        background-color: $white;
-        color: $black;
+        background-color: none;
+        color: $grey;
     } 
-    p,
-    h1 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
         color: $white;
     }
 }
@@ -22,10 +27,10 @@ body.light__mode {
         background-color: $white;
         color: $black;
     a {
-        color: $black;
+        color: $grey;
     }
     button {
-        background-color: $black;
-        color: $white;
+        background-color: none;
+        color: $grey;
     }
 }
