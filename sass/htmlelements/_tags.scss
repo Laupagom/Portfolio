@@ -1,0 +1,12 @@
+.tags{
+    display: flex;
+    & p{
+        line-height: 0px;
+    }
+    > *:first-child {
+        margin-right: auto;
+    }
+    &__category {
+        color: $grey;
+    }
+}
