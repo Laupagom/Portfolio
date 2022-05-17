@@ -1,25 +1,17 @@
 @font-face {
-    font-family: 'GeneralSans-Regular';
-    src: url('../../typography/GeneralSans-Regular.eot') format('eot'),
-    url('../../typography/GeneralSans-Regular.ttf') format('ttf'),
-    url('../../typography/GeneralSans-Regular.woff') format('woff'),
-    url('../../typography/GeneralSans-Regular.woff2') format('woff2');
+    font-family: 'GeneralSans-Extralight';
+    src: url('../../typography/GeneralSans-Extralight.eot') format('eot'),
+    url('../../typography/GeneralSans-Extralight.ttf') format('ttf'),
+    url('../../typography/GeneralSans-Extralight.woff') format('woff'),
+    url('../../typography/GeneralSans-Extralight.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'GeneralSans-Italic';
-    src: url('../../typography/GeneralSans-Italic.eot') format('eot'),
-    url('../../typography/GeneralSans-Italic.ttf') format('ttf'),
-    url('../../typography/GeneralSans-Italic.woff') format('woff'),
-    url('../../typography/GeneralSans-Italic.woff2') format('woff2');
-}
-
-@font-face {
-    font-family: 'GeneralSans-Light';
-    src: url('../../typography/GeneralSans-Light.eot') format('eot'),
-    url('../../typography/GeneralSans-Light.ttf') format('ttf'),
-    url('../../typography/GeneralSans-Light.woff') format('woff'),
-    url('../../typography/GeneralSans-Light.woff2') format('woff2');
+    font-family: 'GeneralSans-ExtralightItalic';
+    src: url('../../typography/GeneralSans-ExtralightItalic.eot') format('eot'),
+    url('../../typography/GeneralSans-ExtralightItalic.ttf') format('ttf'),
+    url('../../typography/GeneralSans-ExtralightItalic.woff') format('woff'),
+    url('../../typography/GeneralSans-ExtralightItalic.woff2') format('woff2');
 }
 
 h1,
@@ -30,7 +22,7 @@ h5,
 h6,
 p,
 a {
-    font-family: 'GeneralSans-Light';
+    font-family: 'GeneralSans-Extralight';
     color: $black;
 }
 
