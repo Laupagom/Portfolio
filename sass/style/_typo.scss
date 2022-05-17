@@ -1,6 +1,5 @@
 @font-face {
     font-family: 'GeneralSans-Regular';
-    font-weight: 300;
     src: url('../../typography/GeneralSans-Regular.eot') format('eot'),
     url('../../typography/GeneralSans-Regular.ttf') format('ttf'),
     url('../../typography/GeneralSans-Regular.woff') format('woff'),
@@ -9,11 +8,18 @@
 
 @font-face {
     font-family: 'GeneralSans-Italic';
-    font-weight: 300;
     src: url('../../typography/GeneralSans-Italic.eot') format('eot'),
     url('../../typography/GeneralSans-Italic.ttf') format('ttf'),
     url('../../typography/GeneralSans-Italic.woff') format('woff'),
     url('../../typography/GeneralSans-Italic.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'GeneralSans-Light';
+    src: url('../../typography/GeneralSans-Light.eot') format('eot'),
+    url('../../typography/GeneralSans-Light.ttf') format('ttf'),
+    url('../../typography/GeneralSans-Light.woff') format('woff'),
+    url('../../typography/GeneralSans-Light.woff2') format('woff2');
 }
 
 h1,
@@ -21,9 +27,9 @@ h2,
 h3,
 h4,
 h5,
-h6
+h6,
 p {
-    font-family: 'GeneralSans-Regular';
+    font-family: 'GeneralSans-Light';
     color: $black;
 }
 
@@ -36,7 +42,7 @@ h2 {
 }
 
 h3 {
-    @include fontStyle (30px, 40px);
+    @include fontStyle (25px, 35px);
 }
 
 h4 {
@@ -44,5 +50,5 @@ h4 {
 }
 
 p {
-    @include fontStyle (15px, 20px);
+    @include fontStyle (15px, 25px);
 }

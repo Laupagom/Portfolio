@@ -1,6 +1,6 @@
 //-----> $TYPOGRAPHY
-@mixin fontStyle ($fontSize, $lineheight) {
-    color: $black;
+@mixin fontStyle ($fontSize, $lineHeight) {
+        color: $black;
     font-size: $fontSize;
-    line-height: $lineheight;
+    line-height: $lineHeight;
 }

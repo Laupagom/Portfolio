@@ -1,3 +1,11 @@
+@import "structure/grid";
+
+@import "utilities/functions";
+@import "utilities/mixins";
+@import "utilities/variables";
+
+@import "site/site";
+
 @import "htmlelements/buttons";
 @import "htmlelements/form";
 @import "htmlelements/tags";
@@ -6,13 +14,7 @@
 @import "layout/footer";
 @import "layout/header";
 @import "layout/main";
-
-@import "site/site";
-
-@import "structure/grid";
+@import "layout/darkmode";
 
 @import "style/typo";
 
-@import "utilities/functions";
-@import "utilities/mixins";
-@import "utilities/variables";

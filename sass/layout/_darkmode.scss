@@ -1,0 +1,31 @@
+
+body.dark__mode {
+    background-color: $black;
+    color: $white;
+
+    a {
+        color: $black;
+    }
+    button {
+        background-color: $white;
+        color: $black;
+    } 
+    p,
+    h1 {
+        color: $white;
+    }
+}
+
+
+
+body.light__mode {
+        background-color: $white;
+        color: $black;
+    a {
+        color: $black;
+    }
+    button {
+        background-color: $black;
+        color: $white;
+    }
+}
