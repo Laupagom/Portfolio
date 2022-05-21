@@ -157,46 +157,6 @@ img {
   margin-right: auto;
 }
 
-body.dark__mode {
-  background-color: #000000;
-  color: #FFFFFF;
-}
-body.dark__mode a {
-  color: #757373;
-}
-body.dark__mode button {
-  background-color: none;
-  color: #757373;
-}
-body.dark__mode h1,
-body.dark__mode h2,
-body.dark__mode h3,
-body.dark__mode h4,
-body.dark__mode h5 {
-  color: #FFFFFF;
-}
-body.dark__mode .tags__title {
-  color: #FFFFFF;
-}
-body.dark__mode .tags__category {
-  color: #757373;
-}
-
-body.light__mode {
-  background-color: #FFFFFF;
-  color: #000000;
-}
-body.light__mode a {
-  color: #C4C4C4;
-}
-body.light__mode button {
-  background-color: none;
-  color: #C4C4C4;
-}
-body.light__mode .tags__category {
-  color: #C4C4C4;
-}
-
 @font-face {
   font-family: "GeneralSans-Extralight";
   src: url("../../typography/GeneralSans-Extralight.eot") format("eot"), url("../../typography/GeneralSans-Extralight.ttf") format("ttf"), url("../../typography/GeneralSans-Extralight.woff") format("woff"), url("../../typography/GeneralSans-Extralight.woff2") format("woff2");
@@ -273,4 +233,55 @@ p {
   color: #000000;
   font-size: 15px;
   line-height: 25px;
+}
+
+body.dark__mode {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+body.dark__mode a {
+  color: #757373;
+}
+body.dark__mode button {
+  background-color: none;
+  color: #757373;
+}
+body.dark__mode h1,
+body.dark__mode h2,
+body.dark__mode h3,
+body.dark__mode h4,
+body.dark__mode h5 {
+  color: #FFFFFF;
+}
+body.dark__mode .tags__title {
+  color: #FFFFFF;
+}
+body.dark__mode .tags__category {
+  color: #757373;
+}
+
+body.light__mode {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+body.light__mode a {
+  color: #C4C4C4;
+}
+body.light__mode button {
+  background-color: none;
+  color: #C4C4C4;
+}
+body.light__mode .tags__category {
+  color: #C4C4C4;
+}
+
+.image {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.opacity-img:hover .image {
+  opacity: 0.3;
 }

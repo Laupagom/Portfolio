@@ -1,0 +1,14 @@
+
+// a.opacity-img:hover {
+// 	opacity:0.4;
+// 	filter:alpha(opacity=40); 
+// 	transition:all .5s ease-out;
+// }
+.image {
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.opacity-img:hover .image {
+	opacity: 0.3;
+}
