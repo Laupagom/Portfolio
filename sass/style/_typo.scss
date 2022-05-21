@@ -14,15 +14,25 @@
     url('../../typography/GeneralSans-ExtralightItalic.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'GeneralSans-Regular';
+    src: url('../../typography/GeneralSans-Regular.eot') format('eot'),
+    url('../../typography/GeneralSans-Regular.ttf') format('ttf'),
+    url('../../typography/GeneralSans-Regular.woff') format('woff'),
+    url('../../typography/GeneralSans-Regular.woff2') format('woff2');
+}
+
 h1,
-h3,
+h3 {
+    font-family: 'GeneralSans-Extralight';
+}
+
 h4,
 h5,
 h6,
 p,
 a {
-    font-family: 'GeneralSans-Extralight';
-    color: $black;
+    font-family: 'GeneralSans-Regular';
 }
 
 h1,

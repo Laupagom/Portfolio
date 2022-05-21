@@ -4,20 +4,24 @@ body.dark__mode {
     color: $white;
 
     a {
-        color: $grey;
+        color: $grey-dark;
     }
     button {
         background-color: none;
-        color: $grey;
+        color: $grey-dark;
     } 
     h1,
     h2,
     h3,
     h4,
-    h5,
-    h6,
-    p {
+    h5 {
         color: $white;
+    }
+    .tags__title {
+        color: $white;
+    }
+    .tags__category {
+        color: $grey-dark;
     }
 }
 
@@ -31,6 +35,9 @@ body.light__mode {
     }
     button {
         background-color: none;
+        color: $grey;
+    }
+    .tags__category {
         color: $grey;
     }
 }

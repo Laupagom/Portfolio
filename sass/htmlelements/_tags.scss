@@ -6,7 +6,8 @@
     > *:first-child {
         margin-right: auto;
     }
-    &__category {
+    &__category p{
         color: $grey;
     }
+
 }

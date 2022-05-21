@@ -1,10 +1,9 @@
 .button__topbar {
     @include fontStyle (15px, 20px);
-    font-family: 'GeneralSans-Light';
+    font-family: 'GeneralSans-Regular';
     background-color: #00000000;
     border: none;
     text-align: right;
-    color: $grey;
     @media all and (max-width: 849px) {
         text-align: center;
         padding-right: 20px;
