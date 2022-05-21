@@ -1,4 +1,8 @@
-hr {
+.line {
     height: 1px;
-    color:$black;
+    color:$grey;
+
+    &__margin--top {
+        margin-top: $space;
+    }
 }

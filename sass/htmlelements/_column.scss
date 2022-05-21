@@ -1,0 +1,12 @@
+.column {
+    &__right {
+        margin-left: auto;
+    }
+
+    &__padding {
+        padding: 10px 0px 0px 18px;
+        @media all and (max-width: 849px) {
+            padding: 5px 0px;
+        }
+    }
+}
