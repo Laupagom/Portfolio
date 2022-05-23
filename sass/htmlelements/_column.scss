@@ -9,4 +9,25 @@
             padding: 5px 0px;
         }
     }
+
+    &__margin--top--medium {
+        margin-top: $space--medium;
+    }
+
+    &__margin--top--big {
+        margin-top: $space--big;
+    }
+
+    &__margin--bottom {
+        margin-bottom: $space;
+    }
+
+    &__margin--top {
+        margin-top: $space;
+    }
+
+    &__margin--bottom--top {
+        margin-top: $space;
+        margin-bottom: $space;
+    }
 }
