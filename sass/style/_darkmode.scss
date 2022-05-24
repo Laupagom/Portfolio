@@ -18,10 +18,10 @@ body.dark__mode {
     p {
         color: $white;
     }
-    .tags__title {
+    .label__title {
         color: $white;
     }
-    .tags__category {
+    .label__category {
         color: $grey-dark;
     }
 }
@@ -38,7 +38,7 @@ body.light__mode {
         background-color: none;
         color: $grey;
     }
-    .tags__category {
+    .label__category {
         color: $grey;
     }
 }

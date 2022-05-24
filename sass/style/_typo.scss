@@ -58,7 +58,7 @@ h2{
 }
 
 h1 {
-    @include fontStyle (70px, 80px);
+    @include fontStyle (80px, 80px);
     @media all and (max-width: 850px) {
         @include fontStyle (30px, 40px);
     }
@@ -73,6 +73,9 @@ h2 {
 
 h3 {
     @include fontStyle (25px, 35px);
+    @media all and (max-width: 850px) {
+        @include fontStyle (20px, 35px);
+    }
 }
 
 h4 {

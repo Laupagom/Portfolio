@@ -4,10 +4,18 @@
     }
 
     &__padding {
-        padding: 10px 0px 0px 18px;
+        padding: 20px 0px 0px 18px;
         @media all and (max-width: 849px) {
             padding: 5px 0px;
         }
+    }
+
+    &__margin--top {
+        margin-top: $space;
+    }
+
+    &__margin--top--small {
+        margin-top: $unit--small;
     }
 
     &__margin--top--medium {
@@ -16,14 +24,17 @@
 
     &__margin--top--big {
         margin-top: $space--big;
+        @media all and (max-width: 849px) {
+            margin-top: $space;
+        }
     }
 
     &__margin--bottom {
         margin-bottom: $space;
     }
 
-    &__margin--top {
-        margin-top: $space;
+    &__margin--bottom--small {
+        margin-bottom: $unit;
     }
 
     &__margin--bottom--top {
