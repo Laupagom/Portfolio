@@ -157,7 +157,6 @@ img {
   padding: 0 15px 5px 15px;
 }
 .button__contact a {
-  color: #BFC0C0;
   text-decoration: none;
   letter-spacing: 1px;
 }
@@ -218,8 +217,16 @@ body.dark__mode #button-contact:hover a {
 .label > *:first-child {
   margin-right: auto;
 }
-.label__category p {
+
+body.light__mode .label__category {
   color: #C4C4C4;
+}
+
+body.dark__mode .label__title {
+  color: #FFFFFF;
+}
+body.dark__mode .label__category {
+  color: #757373;
 }
 
 .line {
@@ -317,6 +324,14 @@ body.dark__mode #button-contact:hover a {
   padding: 10px 0;
 }
 
+body.light__mode .topbar {
+  background-color: #FFFFFF;
+}
+
+body.dark__mode .topbar {
+  background-color: #000000;
+}
+
 .contact__menu {
   color: #000000;
   -webkit-box-align: end;
@@ -345,7 +360,6 @@ body.dark__mode #button-contact:hover a {
   line-height: 35px;
   text-decoration: none;
   font-family: "GeneralSans-LightItalic";
-  color: #000000;
 }
 .contact__menu a:hover {
   color: #000000;
@@ -353,6 +367,14 @@ body.dark__mode #button-contact:hover a {
 }
 .contact__menu .button__contact:hover {
   font-family: "GeneralSans-LightItalic";
+}
+
+body.light__mode .contact__menu a {
+  color: #000000;
+}
+
+body.dark__mode .contact__menu a {
+  color: #FFFFFF;
 }
 
 @font-face {
@@ -479,12 +501,6 @@ body.light__mode {
   background-color: #FFFFFF;
   color: #000000;
 }
-body.light__mode .contact__menu a {
-  color: #000000;
-}
-body.light__mode .topbar {
-  background-color: #FFFFFF;
-}
 body.light__mode a {
   color: #C4C4C4;
 }
@@ -492,19 +508,10 @@ body.light__mode button {
   background-color: none;
   color: #C4C4C4;
 }
-body.light__mode .label__category {
-  color: #C4C4C4;
-}
 
 body.dark__mode {
   background-color: #000000;
   color: #FFFFFF;
-}
-body.dark__mode .contact__menu a {
-  color: #FFFFFF;
-}
-body.dark__mode .topbar {
-  background-color: #000000;
 }
 body.dark__mode a {
   color: #757373;
@@ -521,12 +528,6 @@ body.dark__mode h5,
 body.dark__mode h6,
 body.dark__mode p {
   color: #FFFFFF;
-}
-body.dark__mode .label__title {
-  color: #FFFFFF;
-}
-body.dark__mode .label__category {
-  color: #757373;
 }
 
 .image {

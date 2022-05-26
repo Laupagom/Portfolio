@@ -13,3 +13,16 @@
   display: flex;
   padding: $unit--small 0;
 }
+
+// Dark/Light Mode
+body.light__mode{
+    .topbar {
+        background-color: $white;
+    }
+}
+
+body.dark__mode{
+    .topbar {
+        background-color: $black;
+    }
+}

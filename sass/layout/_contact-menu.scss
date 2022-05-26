@@ -23,7 +23,6 @@
         @include fontStyle (25px, 35px);
         text-decoration: none;
         font-family: 'GeneralSans-LightItalic';
-        color: $black;
     }
 
     a:hover {
@@ -36,3 +35,15 @@
     }
 }
 
+// Dark/Light Mode
+body.light__mode{
+    .contact__menu a {
+        color: $black;
+    }
+}
+
+body.dark__mode{
+    .contact__menu a {
+        color: $white;
+    }
+}

@@ -2,42 +2,28 @@ body.light__mode {
     background-color: $white;
     color: $black;
 
-.contact__menu a {
-    color: $black;
-}
-.topbar {
-    background-color: $white;
-}
-a {
-    color: $grey;
-}
-button {
-    background-color: none;
-    color: $grey;
-}
-
-.label__category {
-    color: $grey;
-}
+    a {
+        color: $grey;
+    }
+    button {
+        background-color: none;
+        color: $grey;
+    }
 }
 
 body.dark__mode {
     background-color: $black;
     color: $white;
 
-    .contact__menu a {
-        color: $white;
-    }
-    .topbar {
-        background-color: $black;
-    }
     a {
         color: $grey-dark;
     }
+
     button {
         background-color: none;
         color: $grey-dark;
     } 
+
     h1,
     h2,
     h3,
@@ -46,11 +32,5 @@ body.dark__mode {
     h6,
     p {
         color: $white;
-    }
-    .label__title {
-        color: $white;
-    }
-    .label__category {
-        color: $grey-dark;
     }
 }

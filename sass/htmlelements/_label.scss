@@ -6,8 +6,21 @@
     > *:first-child {
         margin-right: auto;
     }
-    &__category p{
+}
+
+// Dark/Light Mode
+body.light__mode{
+    .label__category {
         color: $grey;
     }
+}
 
+body.dark__mode{
+    .label__title {
+        color: $white;
+    }
+
+    .label__category {
+        color: $grey-dark;
+    }
 }
