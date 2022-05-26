@@ -149,9 +149,62 @@ img {
   margin-right: 30px;
 }
 .button__contact {
-  border: 1px solid #000000;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
   border-radius: 50px;
-  padding: 0px 20px 5px 20px;
+  padding: 0 15px 5px 15px;
+}
+.button__contact a {
+  color: #BFC0C0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+#button-contact {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-contact a {
+  position: relative;
+  -webkit-transition: all 0.35s ease-Out;
+  transition: all 0.35s ease-Out;
+}
+
+#slide {
+  width: 100%;
+  height: 100%;
+  left: -200px;
+  position: absolute;
+  -webkit-transition: all 0.35s ease-Out;
+  transition: all 0.35s ease-Out;
+}
+
+#button-contact:hover #slide {
+  left: 0;
+}
+
+body.light__mode .button__contact {
+  border: 1px solid #000000;
+}
+body.light__mode #slide {
+  background: #000000;
+}
+body.light__mode #button-contact:hover a {
+  color: #FFFFFF;
+}
+
+body.dark__mode .button__contact {
+  border: 1px solid #FFFFFF;
+}
+body.dark__mode #slide {
+  background: #FFFFFF;
+}
+body.dark__mode #button-contact:hover a {
+  color: #000000;
 }
 
 .label {
@@ -181,7 +234,7 @@ img {
   padding: 0px;
   list-style: none;
   border-bottom: 1px solid #C4C4C4;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .toggle ul {
@@ -266,6 +319,9 @@ img {
 
 .contact__menu {
   color: #000000;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .contact__menu--right {
   text-align: right;
@@ -274,6 +330,9 @@ img {
   .contact__menu--right {
     text-align: inherit;
   }
+}
+.contact__menu--cv {
+  margin-bottom: 35px;
 }
 .contact__menu ul {
   list-style: none;
@@ -291,6 +350,9 @@ img {
 .contact__menu a:hover {
   color: #000000;
   font-family: "GeneralSans-Light";
+}
+.contact__menu .button__contact:hover {
+  font-family: "GeneralSans-LightItalic";
 }
 
 @font-face {

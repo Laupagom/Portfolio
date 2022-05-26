@@ -1,10 +1,16 @@
 .contact__menu {
     color: $black;
+    align-items: flex-end;
+
     &--right {
         text-align: right;
         @media all and (max-width: 849px) {
             text-align: inherit;
         }
+    }
+
+    &--cv {
+        margin-bottom: 35px;
     }
 
     ul {
@@ -19,9 +25,14 @@
         font-family: 'GeneralSans-LightItalic';
         color: $black;
     }
-    a:hover{
+
+    a:hover {
         color: $black;
         font-family: 'GeneralSans-Light';
+    }
+
+    .button__contact:hover {
+        font-family: 'GeneralSans-LightItalic';
     }
 }
 
