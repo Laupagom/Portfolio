@@ -6,40 +6,30 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .grid__cell--100 {
+  .grid__cell--80 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
+        -ms-flex: 0 0 calc(80%);
+            flex: 0 0 calc(80%);
   }
-  .grid__cell--75 {
+  .grid__cell--60 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(75%);
-            flex: 0 0 calc(75%);
-  }
-  .grid__cell--66 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(66%);
-            flex: 0 0 calc(66%);
+        -ms-flex: 0 0 calc(60%);
+            flex: 0 0 calc(60%);
   }
   .grid__cell--50 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(50%);
             flex: 0 0 calc(50%);
   }
-  .grid__cell--33 {
+  .grid__cell--40 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(33%);
-            flex: 0 0 calc(33%);
+        -ms-flex: 0 0 calc(40%);
+            flex: 0 0 calc(40%);
   }
-  .grid__cell--25 {
+  .grid__cell--20 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(25%);
-            flex: 0 0 calc(25%);
-  }
-  .grid__cell--16 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(16%);
-            flex: 0 0 calc(16%);
+        -ms-flex: 0 0 calc(20%);
+            flex: 0 0 calc(20%);
   }
 }
 @media all and (max-width: 849px) {
@@ -50,37 +40,7 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .grid__cell--100 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
-  .grid__cell--75 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
-  .grid__cell--66 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
-  .grid__cell--50 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
-  .grid__cell--33 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
-  .grid__cell--25 {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
-  .grid__cell--16 {
+  .grid__cell--80, .grid__cell--60, .grid__cell--50, .grid__cell--40, .grid__cell--20 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100%);
             flex: 0 0 calc(100%);
@@ -104,7 +64,7 @@
   padding-top: 10px;
 }
 .column__padding--top--medium {
-  padding-top: 90px;
+  padding-top: 120px;
 }
 .column__padding--top--big {
   padding-top: 240px;
@@ -119,6 +79,17 @@
 }
 .column__padding--bottom--small {
   padding-bottom: 30px;
+}
+.column__padding--bottom--medium {
+  padding-bottom: 120px;
+}
+.column__padding--bottom--big {
+  padding-bottom: 240px;
+}
+@media all and (max-width: 849px) {
+  .column__padding--bottom--big {
+    padding-bottom: 60px;
+  }
 }
 .column__padding--bottom--top {
   padding-top: 60px;
@@ -149,7 +120,7 @@ img {
 
 .button__topbar {
   color: #000000;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 20px;
   font-family: "GeneralSans-Regular";
   background-color: #00000000;
@@ -168,7 +139,7 @@ img {
 }
 .button__topbar--contact {
   color: #000000;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 25px;
   font-family: "GeneralSans-Regular";
   text-decoration: none;
@@ -318,11 +289,19 @@ h1 {
   }
 }
 
+h2 {
+  font-family: "GeneralSans-ExtralightItalic";
+}
+
 h4,
 h5,
-h6,
 p {
   font-family: "GeneralSans-Regular";
+}
+
+h3,
+h6 {
+  font-family: "GeneralSans-Light";
 }
 
 h1,
@@ -349,7 +328,6 @@ h1 {
 }
 
 h2 {
-  font-family: "GeneralSans-ExtralightItalic";
   color: #000000;
   font-size: 40px;
   line-height: 50px;
@@ -363,7 +341,6 @@ h2 {
 }
 
 h3 {
-  font-family: "GeneralSans-LightItalic";
   color: #000000;
   font-size: 25px;
   line-height: 35px;
@@ -379,6 +356,12 @@ h3 {
 h4 {
   color: #000000;
   font-size: 15px;
+  line-height: 20px;
+}
+
+h6 {
+  color: #000000;
+  font-size: 18px;
   line-height: 20px;
 }
 
@@ -431,6 +414,7 @@ body.dark__mode h2,
 body.dark__mode h3,
 body.dark__mode h4,
 body.dark__mode h5,
+body.dark__mode h6,
 body.dark__mode p {
   color: #FFFFFF;
 }

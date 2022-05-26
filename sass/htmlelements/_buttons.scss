@@ -1,7 +1,7 @@
 .button {
 
     &__topbar {
-        @include fontStyle (15px, 20px);
+        @include fontStyle (18px, 20px);
         font-family: 'GeneralSans-Regular';
         background-color: #00000000;
         border: none;
@@ -17,7 +17,7 @@
         }
 
         &--contact {
-            @include fontStyle (15px, 25px);
+            @include fontStyle (18px, 25px);
             font-family: 'GeneralSans-Regular';
             text-decoration: none;
             text-align: right;

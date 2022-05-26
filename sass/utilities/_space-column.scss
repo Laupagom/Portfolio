@@ -32,13 +32,24 @@
     }
 
     // PADDING BOTTOM
-    
+
     &__padding--bottom {
         padding-bottom: $space;
     }
 
     &__padding--bottom--small {
         padding-bottom: $unit;
+    }
+
+    &__padding--bottom--medium {
+        padding-bottom: $space--medium;
+    }
+
+    &__padding--bottom--big {
+        padding-bottom: $space--big;
+        @media all and (max-width: 849px) {
+            padding-bottom: $space;
+        }
     }
 
     &__padding--bottom--top {
