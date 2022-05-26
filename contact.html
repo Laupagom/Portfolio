@@ -11,15 +11,20 @@
 <body id="body" class="dark__mode" oncontextmenu=return false; onmousedown=return false; onselectstart=return false;>
     
     <!--FLOATING-->
-    <!-- <div class="floating"></div> -->
+    <div class="floating"></div>
     
     <!-- HEAD -->
     <header>
-        <nav class="topbar">
-            <a href="index.html" class="button__topbar--home"><h6>Laura Parreño</h6></a>
-            <button class="button__topbar" name="dark__light" onclick="toggleDarkLight()" title="Toggle dark/light mode">Light/Dark</button>
-            <a href="contact.html" class="button__topbar--contact">Contacto</a>    
-        </nav>
+        <nav class="topbar topbar__contact">
+            <a href="index.html" class="button__topbar--home"><h4>Laura Parreño</h4></a>
+
+            <a href="index.html" class="button__topbar--link button__topbar--destok">Proyectos</a>
+            
+            <a class="button__topbar--link button__topbar--destok" name="dark__light" onclick="toggleDarkLight()" title="Toggle dark/light mode">Light/Dark</a>                 
+
+            <a href="contact.html" class="button__topbar--link">Contacto</a>
+        </ul>       
+    </nav>
     </header>
     <main >
         <article class="grid column__padding--bottom--small">
@@ -58,7 +63,7 @@
                         <li class="menu__contact--cv">
                             <a href="">Descargar CV</a>
                         </li>
-                        <li>                        
+                        <li class="menu__contact--mobile">                        
                             <div class="button__contact" id="button-contact">
                                 <div id="slide"></div>
                                 <a href="#">¿Hablamos?</a>
@@ -72,17 +77,37 @@
 
             </section>
 
-            <section class="grid__cell--50 column__padding--left column__padding--top--small">
+            <section class="grid__cell--50 column__img column__padding--left column__padding--top--small">
                 <img src="img/img-abautme-laura-parreno.jpg" alt="">
             </section>
         
         </article>
-
-        
-		
-    
-		
     </main>
+
+    <!-- FOOTER -->
+    <hr class="line__margin--top">
+    <footer class="grid menu__footer ">
+        <section class="grid__cell--50 menu__footer">
+            <h6>© 2022 By Laura Parreño</h6>
+            <h6><a>&nbsp;&nbsp;Aviso legal</a></h6>
+        </section>
+        <section class="grid__cell--50">
+            <nav menu__footer menu__footer--social>
+                <ul>
+                    <li>
+                        <h6><a href="#">Mail</a></h6>
+                    </li>
+                    <li>
+                        <h6><a href="#">Instagram</a></h6>
+                    </li>
+                    <li>
+                        <h6><a href="#">Linkedin</a></h6>                    
+                    </li>
+                </ul>       
+            </nav>
+        </section>
+    </footer>
+
     <script src="./js/floating.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="./js/darkmode.js"></script>

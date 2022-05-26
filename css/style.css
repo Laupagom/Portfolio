@@ -26,7 +26,22 @@
         -ms-flex: 0 0 calc(40%);
             flex: 0 0 calc(40%);
   }
+  .grid__cell--25 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(25%);
+            flex: 0 0 calc(25%);
+  }
+  .grid__cell--33 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(33%);
+            flex: 0 0 calc(33%);
+  }
   .grid__cell--20 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(15%);
+            flex: 0 0 calc(15%);
+  }
+  .grid__cell--15 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(15%);
             flex: 0 0 calc(15%);
@@ -40,7 +55,7 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .grid__cell--80, .grid__cell--60, .grid__cell--50, .grid__cell--40, .grid__cell--20 {
+  .grid__cell--80, .grid__cell--60, .grid__cell--50, .grid__cell--40, .grid__cell--25, .grid__cell--20, .grid__cell--15 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100%);
             flex: 0 0 calc(100%);
@@ -50,11 +65,25 @@
   margin-left: auto;
 }
 .column__padding {
-  padding: 20px 0px 0px 18px;
+  padding: 0 0 25px 18px;
 }
 @media all and (max-width: 849px) {
   .column__padding {
-    padding: 5px 0px;
+    padding: 5px 0;
+  }
+}
+.column__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media all and (max-width: 849px) {
+  .column__img {
+    padding: 0;
   }
 }
 .column__padding--top {
@@ -121,32 +150,32 @@ img {
 }
 
 .button__topbar {
-  color: #000000;
-  font-size: 18px;
-  line-height: 20px;
-  font-family: "GeneralSans-Regular";
-  background-color: #00000000;
+  background-color: #000000;
   border: none;
   text-align: right;
-  height: 0px;
 }
 @media all and (max-width: 849px) {
   .button__topbar {
     text-align: center;
-    padding-right: 20px;
   }
 }
 .button__topbar--home {
   text-decoration: none;
 }
-.button__topbar--contact {
+.button__topbar--link {
   color: #000000;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 25px;
   font-family: "GeneralSans-Regular";
   text-decoration: none;
+  min-width: 150px;
   text-align: right;
-  margin-right: 30px;
+  cursor: pointer;
+}
+@media all and (max-width: 850px) {
+  .button__topbar--destok {
+    display: none;
+  }
 }
 .button__contact {
   display: -webkit-inline-box;
@@ -158,7 +187,6 @@ img {
 }
 .button__contact a {
   text-decoration: none;
-  letter-spacing: 1px;
 }
 
 #button-contact {
@@ -212,10 +240,15 @@ body.dark__mode #button-contact:hover a {
   display: flex;
 }
 .label p {
-  line-height: 20px;
+  line-height: 30px;
 }
 .label > *:first-child {
   margin-right: auto;
+}
+@media all and (max-width: 849px) {
+  .label {
+    display: inline;
+  }
 }
 
 body.light__mode .label__category {
@@ -231,7 +264,6 @@ body.dark__mode .label__category {
 
 .line {
   height: 1px;
-  color: #C4C4C4;
 }
 .line__margin--top {
   margin-top: 60px;
@@ -313,15 +345,18 @@ body.dark__mode .label__category {
 }
 .topbar {
   position: fixed;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
-  margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 10px 0;
+  z-index: 1;
+}
+.topbar > *:nth-child(2) {
+  margin-right: auto;
+}
+.topbar__contact > *:first-child {
+  margin-right: auto;
 }
 
 .menu__contact {
@@ -345,52 +380,96 @@ body.dark__mode .label__category {
   padding: 0;
   margin: 0;
 }
+.menu__contact--mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 .menu__contact a {
   color: #000000;
   font-size: 25px;
   line-height: 35px;
   text-decoration: none;
-  font-family: "GeneralSans-LightItalic";
+  font-family: "GeneralSans-Light";
 }
 .menu__contact a:hover {
-  font-family: "GeneralSans-Light";
+  font-family: "GeneralSans-LightItalic";
 }
 .menu__contact .button__contact:hover {
   font-family: "GeneralSans-LightItalic";
 }
 
 .menu__footer {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media all and (max-width: 849px) {
+  .menu__footer > *:first-child {
+    margin-right: auto;
+  }
 }
 .menu__footer ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0px;
+}
+@media all and (max-width: 849px) {
+  .menu__footer ul {
+    padding: 0px;
+  }
 }
 .menu__footer a {
   text-decoration: none;
+  padding: 0 0 0 15px;
+}
+@media all and (max-width: 849px) {
+  .menu__footer a {
+    padding: 30 0 0 15px;
+  }
 }
 
 body.light__mode .topbar {
   background-color: #FFFFFF;
 }
+body.light__mode .topbar a:hover {
+  color: #000000;
+}
 body.light__mode .menu__contact a {
   color: #000000;
 }
 body.light__mode .menu__footer a {
-  color: #757373;
+  color: #C4C4C4;
+}
+body.light__mode .menu__footer a:hover {
+  color: #000000;
 }
 
 body.dark__mode .topbar {
   background-color: #000000;
 }
+body.dark__mode .topbar a:hover {
+  color: #FFFFFF;
+}
 body.dark__mode .menu__contact a {
   color: #FFFFFF;
 }
 body.dark__mode .menu__footer a {
-  color: #C4C4C4;
+  color: #757373;
+}
+body.dark__mode .menu__footer a:hover {
+  color: #FFFFFF;
 }
 
 @font-face {
@@ -413,15 +492,24 @@ body.dark__mode .menu__footer a {
   font-family: "GeneralSans-LightItalic";
   src: url("../../typography/GeneralSans-LightItalic.eot") format("eot"), url("../../typography/GeneralSans-LightItalic.ttf") format("ttf"), url("../../typography/GeneralSans-LightItalic.woff") format("woff"), url("../../typography/GeneralSans-LightItalic.woff2") format("woff2");
 }
-h1 {
+h1,
+h2,
+h3 {
   font-family: "GeneralSans-Extralight";
+}
+
+h4,
+h5,
+h6,
+p {
+  font-family: "GeneralSans-Regular";
 }
 
 .h1__title--project {
   color: #000000;
   font-size: 70px;
   line-height: 80px;
-  font-family: "GeneralSans-ExtralightItalic";
+  font-family: "GeneralSans-Regular";
 }
 @media all and (max-width: 850px) {
   .h1__title--project {
@@ -429,21 +517,6 @@ h1 {
     font-size: 30px;
     line-height: 40px;
   }
-}
-
-h2 {
-  font-family: "GeneralSans-ExtralightItalic";
-}
-
-h4,
-h5,
-p {
-  font-family: "GeneralSans-Regular";
-}
-
-h3,
-h6 {
-  font-family: "GeneralSans-Light";
 }
 
 h1,
@@ -472,7 +545,7 @@ h1 {
 h2 {
   color: #000000;
   font-size: 40px;
-  line-height: 50px;
+  line-height: 30px;
 }
 @media all and (max-width: 850px) {
   h2 {
@@ -503,7 +576,7 @@ h4 {
 
 h6 {
   color: #000000;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 20px;
 }
 

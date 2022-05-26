@@ -1,11 +1,17 @@
 .label{
     display: flex;
+    
     & p{
-        line-height: 20px;
+        line-height: 30px;
     }
     > *:first-child {
         margin-right: auto;
     }
+
+    @media all and (max-width: 849px) {
+        display: inline;
+    }
+    
 }
 
 // Dark/Light Mode

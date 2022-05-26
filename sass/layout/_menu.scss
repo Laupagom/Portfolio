@@ -1,19 +1,19 @@
-// .topbar {
-//     display: flex;
-//     > *:first-child {
-//         margin-right: auto;
-//       }
-// }
-
-// TOPBAR
 .topbar {
     position: fixed;
-    justify-content: space-between;
     width: 100%;
-    margin: 0px auto;
     display: flex;
     padding: $unit--small 0;
-  }
+    z-index: 1;
+     > *:nth-child(2) {
+            margin-right: auto;
+    }
+
+    &__contact {
+        > *:first-child {
+            margin-right: auto;
+    }
+    }
+}
 
 // MENU CONTACT
 .menu__contact {
@@ -36,14 +36,19 @@
         margin: 0;
     }
 
+    &--mobile {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     a {
         @include fontStyle (25px, 35px);
         text-decoration: none;
-        font-family: 'GeneralSans-LightItalic';
+        font-family: 'GeneralSans-Light';
     }
 
     a:hover {
-        font-family: 'GeneralSans-Light';
+        font-family: 'GeneralSans-LightItalic';
     }
 
     .button__contact:hover {
@@ -54,16 +59,31 @@
 // MENU FOOTER
 
 .menu__footer {
-    align-items: flex-end;
+    align-items: center;
+    display: flex;
+    @media all and (max-width: 849px) {
+        > *:first-child {
+            margin-right: auto;
+    }
+    }
 
     ul {
         list-style: none;
-        padding: 0;
-        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0px;
+        @media all and (max-width: 849px) {
+            padding: 0px;
+        }
+        
     }
 
-    a {
+    & a {
         text-decoration: none;
+        padding: 0 0 0 15px;
+        @media all and (max-width: 849px) {
+            padding: 30 0 0 15px;
+        }
     }
 }
 
@@ -73,6 +93,10 @@ body.light__mode{
     // .topbar
     .topbar {
         background-color: $white;
+
+        a:hover {
+            color: $black;
+        }
     }
 
     // .menu__contact
@@ -81,7 +105,11 @@ body.light__mode{
     }
 
     .menu__footer a {
-        color: $grey-dark;
+        color: $grey;
+
+        &:hover {
+            color: $black;
+        }
     }
 }
 
@@ -90,6 +118,10 @@ body.dark__mode{
     // .topbar
     .topbar {
         background-color: $black;
+
+        a:hover {
+            color: $white;
+        }
     }
 
     // .menu__contact
@@ -99,6 +131,10 @@ body.dark__mode{
 
     // .menu__footer
     .menu__footer a {
-        color: $grey;
+        color: $grey-dark;
+
+        &:hover {
+            color: $white;
+        }
     }
 }
