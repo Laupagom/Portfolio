@@ -22,10 +22,26 @@
     url('../../typography/GeneralSans-Regular.woff2') format('woff2');
 }
 
-h1,
-h3 {
+@font-face {
+    font-family: 'GeneralSans-Light';
+    src: url('../../typography/GeneralSans-Light.eot') format('eot'),
+    url('../../typography/GeneralSans-Light.ttf') format('ttf'),
+    url('../../typography/GeneralSans-Light.woff') format('woff'),
+    url('../../typography/GeneralSans-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'GeneralSans-LightItalic';
+    src: url('../../typography/GeneralSans-LightItalic.eot') format('eot'),
+    url('../../typography/GeneralSans-LightItalic.ttf') format('ttf'),
+    url('../../typography/GeneralSans-LightItalic.woff') format('woff'),
+    url('../../typography/GeneralSans-LightItalic.woff2') format('woff2');
+}
+
+h1 {
     font-family: 'GeneralSans-Extralight';
 }
+
 
 .h1__title--project {
     @include fontStyle (70px, 80px);
@@ -38,8 +54,7 @@ h3 {
 h4,
 h5,
 h6,
-p,
-a {
+p {
     font-family: 'GeneralSans-Regular';
 }
 
@@ -53,18 +68,15 @@ p {
     margin: 0px;
 }
 
-h2{
-    font-family: 'GeneralSans-ExtralightItalic';
-}
-
 h1 {
-    @include fontStyle (80px, 80px);
+    @include fontStyle (70px, 70px);
     @media all and (max-width: 850px) {
         @include fontStyle (30px, 40px);
     }
 }
 
 h2 {
+    font-family: 'GeneralSans-ExtralightItalic';
     @include fontStyle (40px, 50px);
     @media all and (max-width: 850px) {
         @include fontStyle (30px, 40px);
@@ -72,6 +84,7 @@ h2 {
 }
 
 h3 {
+    font-family: 'GeneralSans-LightItalic';
     @include fontStyle (25px, 35px);
     @media all and (max-width: 850px) {
         @include fontStyle (20px, 35px);

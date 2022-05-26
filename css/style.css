@@ -123,8 +123,14 @@ img {
   color: #000000;
   font-size: 15px;
   line-height: 25px;
+  font-family: "GeneralSans-Regular";
   text-decoration: none;
   text-align: right;
+}
+.button__contact {
+  border: 1px solid #000000;
+  border-radius: 50px;
+  padding: 0px 20px 5px 20px;
 }
 
 .label {
@@ -153,11 +159,19 @@ img {
     padding: 5px 0px;
   }
 }
+.column__padding--left {
+  padding-left: 30px;
+}
+@media all and (max-width: 849px) {
+  .column__padding--left {
+    padding-left: 0;
+  }
+}
 .column__margin--top {
   margin-top: 60px;
 }
 .column__margin--top--small {
-  margin-top: 10;
+  margin-top: 10px;
 }
 .column__margin--top--medium {
   margin-top: 90px;
@@ -189,6 +203,41 @@ img {
   margin-top: 30px;
 }
 
+.toggle {
+  padding: 0px;
+  list-style: none;
+  border-bottom: 1px solid #C4C4C4;
+  margin-bottom: 30px;
+}
+
+.toggle ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle li {
+  position: relative;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.toggle span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 43px;
+  height: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.toggle .panel {
+  display: none;
+  position: relative;
+  padding-top: 30px;
+}
+
 .topbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,6 +245,35 @@ img {
 }
 .topbar > *:first-child {
   margin-right: auto;
+}
+
+.contact__menu {
+  color: #000000;
+}
+.contact__menu--right {
+  text-align: right;
+}
+@media all and (max-width: 849px) {
+  .contact__menu--right {
+    text-align: inherit;
+  }
+}
+.contact__menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact__menu a {
+  color: #000000;
+  font-size: 25px;
+  line-height: 35px;
+  text-decoration: none;
+  font-family: "GeneralSans-LightItalic";
+  color: #000000;
+}
+.contact__menu a:hover {
+  color: #000000;
+  font-family: "GeneralSans-Light";
 }
 
 @font-face {
@@ -210,8 +288,15 @@ img {
   font-family: "GeneralSans-Regular";
   src: url("../../typography/GeneralSans-Regular.eot") format("eot"), url("../../typography/GeneralSans-Regular.ttf") format("ttf"), url("../../typography/GeneralSans-Regular.woff") format("woff"), url("../../typography/GeneralSans-Regular.woff2") format("woff2");
 }
-h1,
-h3 {
+@font-face {
+  font-family: "GeneralSans-Light";
+  src: url("../../typography/GeneralSans-Light.eot") format("eot"), url("../../typography/GeneralSans-Light.ttf") format("ttf"), url("../../typography/GeneralSans-Light.woff") format("woff"), url("../../typography/GeneralSans-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GeneralSans-LightItalic";
+  src: url("../../typography/GeneralSans-LightItalic.eot") format("eot"), url("../../typography/GeneralSans-LightItalic.ttf") format("ttf"), url("../../typography/GeneralSans-LightItalic.woff") format("woff"), url("../../typography/GeneralSans-LightItalic.woff2") format("woff2");
+}
+h1 {
   font-family: "GeneralSans-Extralight";
 }
 
@@ -232,8 +317,7 @@ h3 {
 h4,
 h5,
 h6,
-p,
-a {
+p {
   font-family: "GeneralSans-Regular";
 }
 
@@ -247,14 +331,10 @@ p {
   margin: 0px;
 }
 
-h2 {
-  font-family: "GeneralSans-ExtralightItalic";
-}
-
 h1 {
   color: #000000;
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 70px;
+  line-height: 70px;
 }
 @media all and (max-width: 850px) {
   h1 {
@@ -265,6 +345,7 @@ h1 {
 }
 
 h2 {
+  font-family: "GeneralSans-ExtralightItalic";
   color: #000000;
   font-size: 40px;
   line-height: 50px;
@@ -278,6 +359,7 @@ h2 {
 }
 
 h3 {
+  font-family: "GeneralSans-LightItalic";
   color: #000000;
   font-size: 25px;
   line-height: 35px;
@@ -306,6 +388,9 @@ body.dark__mode {
   background-color: #000000;
   color: #FFFFFF;
 }
+body.dark__mode .contact__menu a {
+  color: #FFFFFF;
+}
 body.dark__mode a {
   color: #757373;
 }
@@ -330,6 +415,9 @@ body.dark__mode .label__category {
 
 body.light__mode {
   background-color: #FFFFFF;
+  color: #000000;
+}
+body.light__mode .contact__menu a {
   color: #000000;
 }
 body.light__mode a {

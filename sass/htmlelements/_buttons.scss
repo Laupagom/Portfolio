@@ -1,23 +1,41 @@
-.button__topbar {
-    @include fontStyle (15px, 20px);
-    font-family: 'GeneralSans-Regular';
-    background-color: #00000000;
-    border: none;
-    text-align: right;
-    height: 0px;
-    @media all and (max-width: 849px) {
-        text-align: center;
-        padding-right: 20px;
-    }
+.button {
 
-    &--home {
-        text-decoration: none; 
-    }
-
-    &--contact {
-        @include fontStyle (15px, 25px);
-        text-decoration: none;
+    &__topbar {
+        @include fontStyle (15px, 20px);
+        font-family: 'GeneralSans-Regular';
+        background-color: #00000000;
+        border: none;
         text-align: right;
+        height: 0px;
+        @media all and (max-width: 849px) {
+            text-align: center;
+            padding-right: 20px;
+        }
+
+        &--home {
+            text-decoration: none; 
+        }
+
+        &--contact {
+            @include fontStyle (15px, 25px);
+            font-family: 'GeneralSans-Regular';
+            text-decoration: none;
+            text-align: right;
+        }
     }
 
+    &__contact {
+        border: 1px solid $black;
+        border-radius: 50px;
+        padding: 0px 20px 5px 20px;
+    }
 }
+
+// .full__height {
+//     height: 100vh;
+//     display: flex;
+//     position: relative;
+// }
+// .flex-end {
+//     align-items: flex-end;
+// }

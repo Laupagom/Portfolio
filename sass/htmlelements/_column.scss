@@ -10,6 +10,13 @@
         }
     }
 
+    &__padding--left {
+        padding-left: $unit;
+        @media all and (max-width: 849px) {
+            padding-left: 0;
+        }
+    }
+
     &__margin--top {
         margin-top: $space;
     }

@@ -3,6 +3,10 @@ body.dark__mode {
     background-color: $black;
     color: $white;
 
+    .contact__menu a {
+        color: $white;
+    }
+
     a {
         color: $grey-dark;
     }
@@ -26,11 +30,13 @@ body.dark__mode {
     }
 }
 
-
-
 body.light__mode {
         background-color: $white;
         color: $black;
+
+    .contact__menu a {
+        color: $black;
+    }
     a {
         color: $grey;
     }
