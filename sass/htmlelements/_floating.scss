@@ -1,0 +1,19 @@
+.floating {
+    background: linear-gradient(143deg, #FC6076, #FF9A44);
+    animation: candy 2s ease infinite;
+    background-size: 200% 150%;
+    border-radius: 100%;
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    transition: all 10s;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+    
+@keyframes candy {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

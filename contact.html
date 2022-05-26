@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
-<body id="body" class="dark__mode">
+<body id="body" class="dark__mode" oncontextmenu=return false; onmousedown=return false; onselectstart=return false;>
+    
+    <!--FLOATING-->
+    <div class="floating"></div>
+    
     <!-- HEAD -->
     <header>
         <nav class="topbar">
@@ -18,7 +23,7 @@
     </header>
     <main >
         <article class="grid column__padding--bottom--small">
-            <section class="grid__cell--50 column__padding--top">
+            <section class="grid__cell--50 column__padding--top--medium">
                 <h1 class="column__padding--bottom--small">¡Hola, soy Laura!<br>Diseñadora UX/UI y gráfica.</h1>
                 <p class="column__padding--bottom--small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id magni tempora incidunt optio non eveniet, in perspiciatis dolorum, corporis laborum eius hic facere nemo molestiae quae sunt neque expedita tempore?
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id magni tempora incidunt optio non eveniet, in perspiciatis dolorum, corporis laborum eius hic facere nemo molestiae quae sunt neque expedita tempore?
@@ -73,6 +78,7 @@
     
 		
     </main>
+    <script src="./js/floating.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="./js/darkmode.js"></script>
     <script src="./js/toggle.js"></script>

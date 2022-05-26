@@ -1,4 +1,5 @@
 .column {
+
     &__right {
         margin-left: auto;
     }
@@ -59,8 +60,10 @@
 
     &__padding--left {
         padding-left: $unit;
+        text-align: right;
         @media all and (max-width: 849px) {
             padding-left: 0;
+            text-align: center;
         }
     }
 }

@@ -97,10 +97,12 @@
 }
 .column__padding--left {
   padding-left: 30px;
+  text-align: right;
 }
 @media all and (max-width: 849px) {
   .column__padding--left {
     padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -144,6 +146,7 @@ img {
   font-family: "GeneralSans-Regular";
   text-decoration: none;
   text-align: right;
+  margin-right: 30px;
 }
 .button__contact {
   border: 1px solid #000000;
@@ -209,12 +212,51 @@ img {
   padding-top: 30px;
 }
 
+.floating {
+  background: linear-gradient(143deg, #FC6076, #FF9A44);
+  -webkit-animation: candy 2s ease infinite;
+          animation: candy 2s ease infinite;
+  background-size: 200% 150%;
+  border-radius: 100%;
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  -webkit-transition: all 10s;
+  transition: all 10s;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+@-webkit-keyframes candy {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes candy {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .topbar {
   position: fixed;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 98%;
+  width: 100%;
   margin: 0px auto;
   display: -webkit-box;
   display: -ms-flexbox;
