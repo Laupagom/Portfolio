@@ -26,10 +26,10 @@
         -ms-flex: 0 0 calc(40%);
             flex: 0 0 calc(40%);
   }
-  .grid__cell--20 {
+  .grid__cell--15 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(20%);
-            flex: 0 0 calc(20%);
+        -ms-flex: 0 0 calc(15%);
+            flex: 0 0 calc(15%);
   }
 }
 @media all and (max-width: 849px) {
