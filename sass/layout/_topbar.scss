@@ -1,6 +1,15 @@
+// .topbar {
+//     display: flex;
+//     > *:first-child {
+//         margin-right: auto;
+//       }
+// }
+
 .topbar {
-    display: flex;
-    > *:first-child {
-        margin-right: auto;
-      }
+  position: fixed;
+  justify-content: space-between;
+  width: 98%;
+  margin: 0px auto;
+  display: flex;
+  padding: $unit--small 0;
 }

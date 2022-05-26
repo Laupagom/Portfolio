@@ -1,0 +1,55 @@
+.column {
+    &__right {
+        margin-left: auto;
+    }
+
+    &__padding {
+        padding: 20px 0px 0px 18px;
+        @media all and (max-width: 849px) {
+            padding: 5px 0px;
+        }
+    }
+
+    //PADDING TOP
+
+    &__padding--top {
+        padding-top: $space;
+    }
+
+    &__padding--top--small {
+        padding-top: $unit--small;
+    }
+
+    &__padding--top--medium {
+        padding-top: $space--medium;
+    }
+
+    &__padding--top--big {
+        padding-top: $space--big;
+        @media all and (max-width: 849px) {
+            padding-top: $space;
+        }
+    }
+
+    // PADDING BOTTOM
+    
+    &__padding--bottom {
+        padding-bottom: $space;
+    }
+
+    &__padding--bottom--small {
+        padding-bottom: $unit;
+    }
+
+    &__padding--bottom--top {
+        padding-top: $space;
+        padding-bottom: $space;
+    }
+
+    &__padding--left {
+        padding-left: $unit;
+        @media all and (max-width: 849px) {
+            padding-left: 0;
+        }
+    }
+}
