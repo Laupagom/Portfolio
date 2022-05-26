@@ -26,7 +26,7 @@
         -ms-flex: 0 0 calc(40%);
             flex: 0 0 calc(40%);
   }
-  .grid__cell--15 {
+  .grid__cell--20 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(15%);
             flex: 0 0 calc(15%);
@@ -234,7 +234,7 @@ body.dark__mode .label__category {
   color: #C4C4C4;
 }
 .line__margin--top {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .toggle {
@@ -324,57 +324,73 @@ body.dark__mode .label__category {
   padding: 10px 0;
 }
 
-body.light__mode .topbar {
-  background-color: #FFFFFF;
-}
-
-body.dark__mode .topbar {
-  background-color: #000000;
-}
-
-.contact__menu {
-  color: #000000;
+.menu__contact {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.contact__menu--right {
+.menu__contact--right {
   text-align: right;
 }
 @media all and (max-width: 849px) {
-  .contact__menu--right {
+  .menu__contact--right {
     text-align: inherit;
   }
 }
-.contact__menu--cv {
+.menu__contact--cv {
   margin-bottom: 35px;
 }
-.contact__menu ul {
+.menu__contact ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.contact__menu a {
+.menu__contact a {
   color: #000000;
   font-size: 25px;
   line-height: 35px;
   text-decoration: none;
   font-family: "GeneralSans-LightItalic";
 }
-.contact__menu a:hover {
-  color: #000000;
+.menu__contact a:hover {
   font-family: "GeneralSans-Light";
 }
-.contact__menu .button__contact:hover {
+.menu__contact .button__contact:hover {
   font-family: "GeneralSans-LightItalic";
 }
 
-body.light__mode .contact__menu a {
-  color: #000000;
+.menu__footer {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.menu__footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu__footer a {
+  text-decoration: none;
 }
 
-body.dark__mode .contact__menu a {
+body.light__mode .topbar {
+  background-color: #FFFFFF;
+}
+body.light__mode .menu__contact a {
+  color: #000000;
+}
+body.light__mode .menu__footer a {
+  color: #757373;
+}
+
+body.dark__mode .topbar {
+  background-color: #000000;
+}
+body.dark__mode .menu__contact a {
   color: #FFFFFF;
+}
+body.dark__mode .menu__footer a {
+  color: #C4C4C4;
 }
 
 @font-face {
