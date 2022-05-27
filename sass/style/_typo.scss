@@ -55,7 +55,7 @@ p {
 
 .h1__title--project {
     @include fontStyle (70px, 80px);
-    font-family: 'GeneralSans-Regular';
+    font-family: 'GeneralSans-ExtralightItalic';
     @media all and (max-width: 850px) {
         @include fontStyle (30px, 40px);
     }
@@ -80,9 +80,9 @@ h1 {
 }
 
 h2 {
-    @include fontStyle (40px, 30px);
+    @include fontStyle (40px, 50px);
     @media all and (max-width: 850px) {
-        @include fontStyle (30px, 40px);
+        @include fontStyle (30px, 45px);
     }
 }
 
@@ -91,16 +91,20 @@ h3 {
     @media all and (max-width: 850px) {
         @include fontStyle (20px, 35px);
     }
+
+    a {
+        text-decoration: none;
+    }
 }
 
 h4 {
-    @include fontStyle (15px, 20px);
+    @include fontStyle (17px, 20px);
 }
 
 h6 {
-    @include fontStyle (15px, 20px);
+    @include fontStyle (17px, 20px);
 }
 
 p {
-    @include fontStyle (15px, 25px);
+    @include fontStyle (17px, 28px);
 }

@@ -13,7 +13,6 @@
         <nav class="topbar">
                 <a href="index.html" class="button__topbar--home"><h4>Laura Parreño</h4></a>
 
-                <h4>Diseño UX/UI</h4>
                 <a href="index.html" class="button__topbar--link button__topbar--destok">Proyectos</a>
                 
                 <a class="button__topbar--link button__topbar--destok" name="dark__light" onclick="toggleDarkLight()" title="Toggle dark/light mode">Light/Dark</a>                 
@@ -125,15 +124,29 @@
                         <h4 class="label__category">Categorías proyecto</h4>    
                     </div>                   
                 </div>             
-            </article>
         </section>
+
+        <article class="grid column__padding--top--medium column__padding--bottom--medium">
+            <div class="grid__cell--20"> 
+            </div>
+            <div class="grid__cell--80  column__right column__padding">
+                <h2 >Si te ha gustado mi portfolio dale a like <span><input type="checkbox" id="like"><label for="like"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+                </span> y hagamos un proyecto</h2>
+                
+                <div class="button__contact menu__contact menu__contact--index margin-top" id="button-contact">
+                    <div id="slide"></div>
+                    <a class="buton__contact" href="#">¡Contacta conmigo!</a>
+                </div>
+
+            </div>      
+        </article>
+        
     </main>
 
     <!-- FOOTER -->
-    <hr class="line__margin--top">
     <footer class="grid menu__footer">
         <section class="grid__cell--50">
-            <h6>© 2022 By Laura Parreño <a href="#">&nbsp;&nbsp;Política de privacidad</a></h6>
+            <h6>© 2022 By Laura Parreño <a href="#">&nbsp;&nbsp;Aviso legal</a></h6>
         </section>
         <section class="grid__cell--50">
             <nav menu__footer menu__footer--social>
@@ -151,6 +164,7 @@
             </nav>
         </section>
     </footer>
+    <script src="./js/like.js"></script>
     <script src="./js/darkmode.js"></script>
 </body>
 </html>

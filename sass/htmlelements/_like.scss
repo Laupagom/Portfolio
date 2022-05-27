@@ -1,0 +1,55 @@
+
+input[type="checkbox"] {
+display: none;
+
+}
+
+label {
+position: relative;
+cursor: pointer;
+
+}
+
+label svg {
+width: 40px;
+
+}
+
+input[type="checkbox"] + label svg {
+fill: #f4b4fb;
+transition: all .3s;
+margin-top: 0;
+
+}
+
+input[type="checkbox"]:checked + label svg {
+fill: #eb8df6;
+animation: like .8s ease-out;
+transition: all .3s;
+
+}
+
+@keyframes like {
+0% {
+    transform: scale(1,1);
+}
+50% {
+    transform: scale(.5,.5);
+}
+100% {
+    transform: scale(1,1);
+}
+}
+
+input[type="checkbox"]:checked + label::after {
+content: "";
+position: absolute;
+width: 40px;
+height: 40px;
+border: 5px solid #ec70f9;
+border-radius: 50%;
+animation: circle .8s ease-out;
+opacity: 0;
+top: -10px;
+left: -4px;
+}
