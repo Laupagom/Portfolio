@@ -2,6 +2,11 @@
     .grid {
         display: flex;
         flex-wrap: wrap;
+
+        &__center {
+            align-items: center;
+            height: 100vh;
+        }
     
             &__cell {
     
@@ -24,8 +29,13 @@
             &--25 {
                 flex: 0 0 calc(25%);
             }
+
+            &--24 {
+                flex: 0 0 calc(24%);
+            }
+
             &--33 {
-                flex: 0 0 calc(33%);
+                flex: 0 0 calc(33.33%);
             }
 
             &--20 {

@@ -1,0 +1,61 @@
+
+
+.form {
+    display: flex;
+    justify-content: center;
+
+    &__background {
+        background-color: black;
+        padding: 40px;
+        width: 75%;
+        box-shadow: blue;
+    }
+}
+
+.group {
+    padding-bottom: 10px;
+}
+
+.label {
+    width: 100%;
+    font-family: 'GeneralSans-Regular';
+    @include fontStyle (17px, 28px);
+}
+
+.input {
+    width: 100%;
+    font-family: 'GeneralSans-Regular';
+    @include fontStyle (17px, 28px);
+    
+}
+
+
+// DARK/LIGHT
+body.light__mode{
+
+    .label {
+        color: $black;
+    }
+
+    .input {
+        color: $grey;
+        border-style: 0.5px solid #c4c4c48a;
+        color: black;
+    }
+
+}
+
+body.dark__mode{
+    .label {
+        color: $white;
+    }
+    .input {
+        padding: 15px;
+        color: $grey-dark;
+        border-style: solid solid;
+        border-color: $grey-dark;
+        border-width: 0.5px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+    }
+}
