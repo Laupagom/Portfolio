@@ -98,13 +98,24 @@ h3 {
 }
 
 h4 {
-    @include fontStyle (17px, 20px);
+    @include fontStyle (15px, 20px);
+    @media all and (max-width: 849px) {
+        @include fontStyle (13px, 25px);
+    }
 }
 
 h6 {
-    @include fontStyle (17px, 20px);
+    @include fontStyle (15px, 20px);
+    @media all and (max-width: 850px) {
+        @include fontStyle (15px, 25px);
+    }
 }
 
 p {
-    @include fontStyle (17px, 28px);
+    @include fontStyle (15px, 28px);
+    @media all and (max-width: 850px) {
+        @include fontStyle (15px, 25px);
+    }
 }
+
+

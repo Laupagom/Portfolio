@@ -11,21 +11,16 @@
 
 // MENU CONTACT
 .menu__contact {
-    align-items: flex-end;
-
     &--index {
         margin-top: $unit;
     }
 
     &--right {
         text-align: right;
-        @media all and (max-width: 849px) {
-            text-align: inherit;
         }
-    }
 
     &--cv {
-        margin-bottom: 30px;
+        margin-top: 15px;
     }
 
     ul {

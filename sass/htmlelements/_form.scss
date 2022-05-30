@@ -1,14 +1,11 @@
 
-
 .form {
     display: flex;
     justify-content: center;
 
     &__background {
-        background-color: black;
         padding: 40px;
         width: 75%;
-        box-shadow: blue;
     }
 }
 
@@ -26,26 +23,48 @@
     width: 100%;
     font-family: 'GeneralSans-Regular';
     @include fontStyle (17px, 28px);
-    
 }
 
+.checkbox a  {
+    text-decoration: none;
+}
 
 // DARK/LIGHT
 body.light__mode{
+
+    &__background {
+        background-color: $white;
+    }
 
     .label {
         color: $black;
     }
 
     .input {
+        padding: 15px;
         color: $grey;
-        border-style: 0.5px solid #c4c4c48a;
-        color: black;
-    }
+        border-style: solid solid;
+        border-color: $grey;
+        border-width: 0.5px;
+        background-color: $white;
+        border-radius: 10px;
 
+        &:focus {
+            background-color: $white;
+            color: $black;
+            border-color: $grey;
+        }
+    }
+    .checkbox a  {
+        color: $black;    
+    }
 }
 
 body.dark__mode{
+
+    &__background {
+        background-color: $black;
+    }
     .label {
         color: $white;
     }
@@ -53,9 +72,13 @@ body.dark__mode{
         padding: 15px;
         color: $grey-dark;
         border-style: solid solid;
-        border-color: $grey-dark;
+        border-color: $black;
         border-width: 0.5px;
-        background-color: rgb(0, 0, 0);
+        background-color: $black;
         border-radius: 10px;
+    }
+
+    .checkbox a  {
+        color: $white;    
     }
 }

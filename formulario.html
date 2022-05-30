@@ -23,13 +23,19 @@
         </ul>       
     </nav>
     </header>
-    <main>
+
+    <main class="gradient">
         <article class="grid grid__center">
-            <section class="grid__cell--50 menu__contact">
-                <h1>¡Completa el formulario y  te escribo pronto!</h1>
- 
-                <a class="button__contact--link" href="#">hola@lau.site.com</a>
+            <section class="grid__cell--50 menu__contact menu__contactm">
+                <h1 class="column__padding--bottom--small">¡Completa el formulario y  te escribo pronto!</h1>
+                <ul>
+                    <li class="button__contact--link">
+                        <a href="">hola@lau.site.com</a>
+                    </li>
+                </ul>
             </section>
+
+
 
             <article class="grid__cell--50 form">
                 <section class="form__background">
@@ -46,11 +52,13 @@
 
                                 <div class="group">
                                     <label for="mensaje" class="label">Mensaje</label>
-                                    <input id="mensaje" type="textarea" class="input" placeholder="Escribe tu mensaje...">
+                                    <textarea id="mensaje" type="textarea" class="input" rows="2" cols="200" placeholder="Escribe tu mensaje..."></textarea>
                                 </div>
-
-                                <input type="checkbox" value"acepta" name="condiciones" checked="checked"> Acepto condiciones</p>
-
+                                
+                                <div class="group">
+                                    <input class="checkbox" type="checkbox" name="checks">
+                                    <label class="checkbox" class="label"><h6>Acepto la <a href="http://localhost:8848/privacity/privacy-policy.html" class="links">política de privacidad</a> de esta página</h6></label>
+                                </div>
                                 <div class="button__contact menu__contact menu__contact--index margin-top" id="button-contact">
                                     <div id="slide"></div>
                                     <a class="buton__contact" href="#">Enviar mensaje</a>
@@ -60,7 +68,9 @@
         
         </article>
 
-    
+        
+
+
         
     </main>
 

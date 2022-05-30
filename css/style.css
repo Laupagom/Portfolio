@@ -179,7 +179,7 @@ img {
 }
 .button__topbar--link {
   color: #000000;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 25px;
   font-family: "GeneralSans-Regular";
   text-decoration: none;
@@ -268,11 +268,8 @@ body.dark__mode #button-contact:hover a {
           justify-content: center;
 }
 .form__background {
-  background-color: black;
   padding: 40px;
   width: 75%;
-  -webkit-box-shadow: blue;
-          box-shadow: blue;
 }
 
 .group {
@@ -295,15 +292,37 @@ body.dark__mode #button-contact:hover a {
   line-height: 28px;
 }
 
+.checkbox a {
+  text-decoration: none;
+}
+
+body.light__mode__background {
+  background-color: #FFFFFF;
+}
 body.light__mode .label {
   color: #000000;
 }
 body.light__mode .input {
+  padding: 15px;
   color: #C4C4C4;
-  border-style: 0.5px solid #c4c4c48a;
-  color: black;
+  border-style: solid solid;
+  border-color: #C4C4C4;
+  border-width: 0.5px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+body.light__mode .input:focus {
+  background-color: #FFFFFF;
+  color: #000000;
+  border-color: #C4C4C4;
+}
+body.light__mode .checkbox a {
+  color: #000000;
 }
 
+body.dark__mode__background {
+  background-color: #000000;
+}
 body.dark__mode .label {
   color: #FFFFFF;
 }
@@ -311,10 +330,13 @@ body.dark__mode .input {
   padding: 15px;
   color: #757373;
   border-style: solid solid;
-  border-color: #757373;
+  border-color: #000000;
   border-width: 0.5px;
-  background-color: black;
+  background-color: #000000;
   border-radius: 10px;
+}
+body.dark__mode .checkbox a {
+  color: #FFFFFF;
 }
 
 .label {
@@ -349,7 +371,7 @@ body.dark__mode .label__category {
   padding: 0px;
   list-style: none;
   border-bottom: 1px solid #C4C4C4;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .toggle ul {
@@ -380,23 +402,12 @@ body.dark__mode .label__category {
   padding-top: 30px;
 }
 
-.floating {
-  background: linear-gradient(143deg, #FC6076, #FF9A44);
-  -webkit-animation: candy 2s ease infinite;
-          animation: candy 2s ease infinite;
-  background-size: 200% 150%;
-  border-radius: 100%;
-  position: fixed;
-  width: 150px;
-  height: 150px;
-  -webkit-transition: all 10s;
-  transition: all 10s;
-  left: 0;
-  top: 0;
-  z-index: -1;
+.gradient {
+  width: 100vw;
+  height: 100vh;
 }
 
-@-webkit-keyframes candy {
+@-webkit-keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
   }
@@ -408,7 +419,7 @@ body.dark__mode .label__category {
   }
 }
 
-@keyframes candy {
+@keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
   }
@@ -419,6 +430,20 @@ body.dark__mode .label__category {
     background-position: 0% 50%;
   }
 }
+body.light__mode .gradient {
+  background: linear-gradient(334deg, #1900ff, white, white);
+  background-size: 180% 180%;
+  -webkit-animation: gradient-animation 6s ease infinite;
+          animation: gradient-animation 6s ease infinite;
+}
+
+body.dark__mode .gradient {
+  background: linear-gradient(334deg, #00ffd9, black, black);
+  background-size: 180% 180%;
+  -webkit-animation: gradient-animation 6s ease infinite;
+          animation: gradient-animation 6s ease infinite;
+}
+
 input[type=checkbox] {
   display: none;
 }
@@ -527,24 +552,14 @@ input[type=checkbox]:checked + label::after {
   margin-right: auto;
 }
 
-.menu__contact {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
 .menu__contact--index {
   margin-top: 30px;
 }
 .menu__contact--right {
   text-align: right;
 }
-@media all and (max-width: 849px) {
-  .menu__contact--right {
-    text-align: inherit;
-  }
-}
 .menu__contact--cv {
-  margin-bottom: 30px;
+  margin-top: 15px;
 }
 .menu__contact ul {
   list-style: none;
@@ -747,20 +762,41 @@ h3 a {
 
 h4 {
   color: #000000;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 20px;
+}
+@media all and (max-width: 849px) {
+  h4 {
+    color: #000000;
+    font-size: 13px;
+    line-height: 25px;
+  }
 }
 
 h6 {
   color: #000000;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 20px;
+}
+@media all and (max-width: 850px) {
+  h6 {
+    color: #000000;
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 p {
   color: #000000;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 28px;
+}
+@media all and (max-width: 850px) {
+  p {
+    color: #000000;
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 body.light__mode {
