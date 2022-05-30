@@ -1,7 +1,12 @@
 .column {
 
     &__right {
-        margin-left: auto;
+        margin-left: auto;    
+    }
+
+    &__flex-end {
+        display: flex;
+        justify-content: flex-end;
     }
 
     &__padding {
