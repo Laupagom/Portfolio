@@ -42,7 +42,13 @@
     &__padding--top--big {
         padding-top: $space--big;
         @media all and (max-width: 849px) {
-            padding-top: $space;
+            padding-top: $space--medium;
+        }
+
+        &--mobile {
+            @media all and (max-width: 849px) {
+                padding-top: $space--medium;
+            }
         }
     }
 

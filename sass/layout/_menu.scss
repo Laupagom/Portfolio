@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;
     display: flex;
-    padding: 15px 0;
+    padding: 15px;
     z-index: 1;
      > *:nth-child(1) {
             margin-right: auto;
@@ -44,10 +44,10 @@
 // MENU FOOTER
 
 .menu__footer {
+    padding: 15px;
     border-style: solid none none;
     border-color: #c4c4c48a;;
     border-width: 0.5px;
-    padding: 10px 0 0 0 ;
     align-items: center;
     display: flex;
     @media all and (max-width: 849px) {

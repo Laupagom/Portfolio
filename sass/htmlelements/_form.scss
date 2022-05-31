@@ -6,6 +6,11 @@
     &__background {
         padding: 40px;
         width: 75%;
+
+        @media all and (max-width: 900px) {
+            padding: 10px;
+            width: 100%;
+        }
     }
 }
 
