@@ -202,7 +202,7 @@ video {
 }
 
 .button__topbar {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "GeneralSans-Regular";
   text-decoration: none;
   border: none;
@@ -287,7 +287,8 @@ body.light__mode .button__contact {
   border: 1px solid #000000;
 }
 body.light__mode .button__topbar--home,
-body.light__mode .button__topbar--darkmode {
+body.light__mode .button__topbar--darkmode,
+body.light__mode .button__topbar--title {
   color: #000000;
 }
 body.light__mode #link a:active {
@@ -310,7 +311,8 @@ body.dark__mode #slide {
   background: #FFFFFF;
 }
 body.dark__mode .button__topbar--home,
-body.dark__mode .button__topbar--darkmode {
+body.dark__mode .button__topbar--darkmode,
+body.dark__mode .button__topbar--title {
   color: #FFFFFF;
 }
 body.dark__mode #button-contact:hover a {
@@ -782,7 +784,7 @@ h3 a {
 h4,
 h6,
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 30px;
 }
 

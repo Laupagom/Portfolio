@@ -1,7 +1,7 @@
 .button {
 
     &__topbar {
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-family: 'GeneralSans-Regular';
         text-decoration: none;
         border: none;
@@ -93,7 +93,8 @@ body.light__mode{
     }
 
     .button__topbar--home,
-    .button__topbar--darkmode {
+    .button__topbar--darkmode,
+    .button__topbar--title  {
         color: $black;
     }
 
@@ -124,7 +125,8 @@ body.dark__mode{
     }
 
     .button__topbar--home,
-    .button__topbar--darkmode {
+    .button__topbar--darkmode,
+    .button__topbar--title {
         color: $white;
     }
 
