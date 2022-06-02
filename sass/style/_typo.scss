@@ -59,19 +59,19 @@ h5,
 h6,
 p {
     margin: 0px;
+    line-height: 1.2;
 }
 
 h1 {
-    font-size: clamp(3rem, -0.875rem + 5vw, 6rem);
+    font-size: clamp(2.5rem, -0.875rem + 5vw, 6rem);
 }
 
 h2 {
-    font-size: clamp(2.5rem, -0.875rem + 8.333vw, 3rem);
+    font-size: clamp(2rem, -0.875rem + 8.333vw, 3rem);
 }
 
 h3 {
     font-size: clamp(1.2rem, -0.875rem + 8.333vw, 1.7rem);
-
     a {
         text-decoration: none;
     }
@@ -81,7 +81,5 @@ h4,
 h6,
 p {
     font-size: 1rem;
-    line-height: 30px;
+    line-height: 25px;
 }
-
-

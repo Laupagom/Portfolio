@@ -28,12 +28,11 @@
     </header>
 
     <main>
-        <article class="grid column__article">
-            <section class="grid__cell--50">
-                <h1 class="column__padding--bottom--small">¡Hola, soy Laura!<br>Front-end Developer, Diseñadora UX/UI y gráfica.</h1>
+        <div class="column__fixed">
+            <section class="">
+                <h1 class="column__padding--bottom--small column__padding--top--medium">¡Hola, soy Laura!<br>Front-end Developer, Diseñadora UX/UI y gráfica.</h1>
                 <p class="column__padding--bottom--small">Me inicié en el mundo laboral en 2017. He colaborado en diferentes estudios especializados en el diseño de páginas web y marketing online. Actualmente trabajo de forma autónoma, aunque en un futuro me encantaría formar de nuevo parte de un equipo. Disfruto el diseño colaborativo, estableciendo la conversación como la herramienta más poderosa. Estoy convencida que es la mejor forma de obtener buenos resultados.
                 </p>
-
                 <div class="toggle">
                     <ul>
                         <li>
@@ -45,46 +44,42 @@
                         </li>
                     </ul>
                 </div>
+            </section>
 
-                <nav class="grid menu__contact">
-                    <ul class="grid__cell--50">
-                        <li class="button__contact--link">
-                            <a href="mailto:hola@lauraparreno.com" target="_blank">Mail</a>
-                        </li>
-                        <li class="button__contact--link">
-                            <a href="https://www.instagram.com/lau.site/" target="_blank">Instagram</a>
-                        </li>
-                        <li class="button__contact--link">
-                            <a href="https://www.linkedin.com/in/laura-parre%C3%B1o-g%C3%B3mez-bb38a120a/" target="_blank">Linkedin</a>
-                        </li>
-                        <li class="button__contact--link">
-                            <a href="https://github.com/Laupagom" target="_blank">GitHub</a>
-                        </li>
-                    </ul>
-                    <ul class="grid__cell--50 menu__contact--right">
-                        <li class="menu__contact--mobile">                        
-                            <div class="button__contact" id="button-contact">
-                                <div id="slide"></div>
-                                <a href="formulario.html">¿Hablamos?</a>
-                            </div>
-                        </li>
-                        
-                        <li class="menu__contact--cv button__contact--link menu__contact--mobile">
-                            <a href="#" target="_blank">Descargar CV</a>
-                        </li>
-                        
-                    </ul>
+            <nav class="grid menu__contact">
+                <ul class="grid__cell--50">
+                    <li class="button__contact--link">
+                        <a href="mailto:hola@lauraparreno.com" target="_blank">Mail</a>
+                    </li>
+                    <li class="button__contact--link">
+                        <a href="https://www.instagram.com/lau.site/" target="_blank">Instagram</a>
+                    </li>
+                    <li class="button__contact--link">
+                        <a href="https://www.linkedin.com/in/laura-parre%C3%B1o-g%C3%B3mez-bb38a120a/" target="_blank">Linkedin</a>
+                    </li>
+                    <li class="button__contact--link">
+                        <a href="https://github.com/Laupagom" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+                <ul class="grid__cell--50 menu__contact--right">
+                    <li class="menu__contact--mobile">                        
+                        <div class="button__contact" id="button-contact">
+                            <div id="slide"></div>
+                            <a href="formulario.html">¿Hablamos?</a>
+                        </div>
+                    </li>
                     
-                </nav>
+                    <li class="menu__contact--cv button__contact--link menu__contact--mobile">
+                        <a href="#" target="_blank">Descargar CV</a>
+                    </li>
+                    
+                </ul>
+                
+            </nav>
 
-
-            </section>
-
-            <section class="grid__cell--50 column__img column__padding--left column__padding--top--small">
-                <img src="img/img-abautme-laura-parreno.jpg" alt="">
-            </section>
+            <aside class="column__fixed--img"></aside>
         
-        </article>
+        </div>
         
     </main>
 
@@ -110,7 +105,6 @@
         </section>
     </footer>
 
-    <script src="./js/floating.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="./js/darkmode.js"></script>
     <script src="./js/toggle.js"></script>

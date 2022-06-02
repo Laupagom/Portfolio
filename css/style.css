@@ -72,10 +72,6 @@
             flex: 0 0 calc(100%);
   }
 }
-:root {
-  font-size: 15px;
-}
-
 .column__right {
   margin-left: auto;
 }
@@ -123,7 +119,7 @@
 }
 @media all and (max-width: 849px) {
   .column__padding--top--big {
-    padding-top: 120px;
+    padding-top: 60px;
   }
 }
 @media all and (max-width: 849px) {
@@ -139,6 +135,11 @@
 }
 .column__padding--bottom--medium {
   padding-bottom: 120px;
+}
+@media all and (max-width: 849px) {
+  .column__padding--bottom--medium {
+    padding-bottom: 60px;
+  }
 }
 .column__padding--bottom--big {
   padding-bottom: 240px;
@@ -169,12 +170,30 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 100vh;
   padding-bottom: 20px;
 }
 @media all and (max-width: 849px) {
   .column__article {
     padding-top: 120px;
+  }
+}
+@media all and (min-width: 912px) {
+  .column__fixed {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .column__fixed--img {
+    display: block;
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: calc(50% - 20px);
   }
 }
 
@@ -333,7 +352,7 @@ body.dark__mode #button-contact:hover a {
 }
 @media all and (max-width: 900px) {
   .form__background {
-    padding: 10px;
+    padding: 0;
     width: 100%;
   }
 }
@@ -764,14 +783,15 @@ h5,
 h6,
 p {
   margin: 0px;
+  line-height: 1.2;
 }
 
 h1 {
-  font-size: clamp(3rem, -0.875rem + 5vw, 6rem);
+  font-size: clamp(2.5rem, -0.875rem + 5vw, 6rem);
 }
 
 h2 {
-  font-size: clamp(2.5rem, -0.875rem + 8.333vw, 3rem);
+  font-size: clamp(2rem, -0.875rem + 8.333vw, 3rem);
 }
 
 h3 {
@@ -785,7 +805,7 @@ h4,
 h6,
 p {
   font-size: 1rem;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 body.light__mode {
