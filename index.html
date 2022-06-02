@@ -11,17 +11,16 @@
     <!-- TOPBAR -->
     <header>
         <nav class="topbar">
-                <a href="index.html" class="button__topbar--home"><h4>Laura Parreño</h4></a>
-
-                <a href="index.html" class="button__topbar--link button__topbar--destok">Proyectos</a>
+                <a href="index.html" class="button__topbar button__topbar--home">Laura Parreño</a>
                 
-                <a class="button__topbar--link button__topbar--destok" name="dark__light" onclick="toggleDarkLight()" title="Toggle dark/light mode">Light/Dark</a>                 
+                <a href="index.html" class="button__topbar button__topbar--link--destok">Proyectos</a>                 
 
-                <a href="contacto.html" class="button__topbar--link">Contacto</a>
+                <a href="contacto.html" class="button__topbar button__topbar--link">Contacto</a>
+
+                <a class="button__topbar--darkmode" name="dark__light" onclick="toggleDarkLight()" title="Toggle dark/light mode">◐</a>
             </ul>       
         </nav>
     </header>
-
     <!-- CONTENT -->
     <main>
         <h1 class="column__padding--top--medium column__padding--bottom--medium">&nbsp;&nbsp;&nbsp;&nbsp;▲ Lorem ipsum dolor sit amet, consectetur adipiscing elzit adipiscing elzit. Mauris dictum ● malesuada mauris, vulputate mollis libero lobortis rutrum.</h1>
@@ -31,10 +30,10 @@
             </div>
             <article class="grid__cell--80 column__padding">
                 <div>
-                    <a href="page-project.html" class="opacity-vd">
-                    <video autoplay="" muted="" loop="" id="" class="video__projects" poster="img/img-prueba.jpg">
-                    <source src="img/optica vallcorba.mp4" type="video/webm">
-                    </video>
+                    <a href="page-project.html" class="bn-hover">
+                        <video autoplay="" muted="" loop="" id="" class="video__projects" poster="img/img-prueba.jpg">
+                            <source src="img/WEB - ABOUT ME.mp4" type="video/webm">
+                        </video>
                     </a>
                 </div>
                 <div class="label">
@@ -45,14 +44,16 @@
 
             <article class="grid">
                 <div class="grid__cell--40 column__right column__padding">
-                    <a href="#"></a><img src="img/frame.jpeg" alt="">
+                    <a href="#" class="bn-hover">
+                        <img src="img/frame.jpeg" alt="">
+                    </a>  
                     <div class="label">
                         <h4 class="label__title">About me</h4> 
                         <h4 class="label__category">Categorías proyecto</h4>    
-                    </div>                   
+                    </div>                 
                 </div>    
                 <div class="grid__cell--40 column__padding">
-                    <a href="#" class="opacity-img">
+                    <a href="#" class="bn-hover">
                         <img src="img/img-prueba.jpg" alt="" class="image">
                     </a>
                     <div class="label">
@@ -64,14 +65,18 @@
 
             <article class="grid">
                 <div class="grid__cell--40 column__right column__padding">
-                    <a href="#"></a><img src="img/frame.jpeg" alt="">
+                    <a href="#" class="bn-hover">
+                        <img src="img/img-prueba.jpg" alt="" class="image">
+                    </a>
                     <div class="label">
                         <h4 class="label__title">Titulo proyecto</h4> 
                         <h4 class="label__category">Categorías proyecto</h4>    
                     </div>                   
                 </div>    
                 <div class="grid__cell--40 column__padding">
-                    <a href="#"></a><img src="img/frame.jpeg" alt="">
+                    <a href="#" class="bn-hover">
+                        <img src="img/img-prueba.jpg" alt="" class="image">
+                    </a> 
                     <div class="label">
                         <h4 class="label__title">Titulo proyecto</h4> 
                         <h4 class="label__category">Categorías proyecto</h4>    
@@ -85,9 +90,9 @@
                 <h2>2021_2022</h2>
             </div>
             <article class="grid__cell--80 column__right column__padding">
-                <a href="#" class="opacity-img">
+                <a href="#" class="bn-hover">
                     <img src="img/img-prueba.jpg" alt="" class="image">
-                </a>
+                </a> 
                 <div class="label">
                     <h4 class="label__title">Titulo proyecto</h4> 
                     <h4 class="label__category">Categorías proyecto</h4>    
@@ -96,7 +101,9 @@
 
             <article class="grid">
                 <div class="grid__cell--40 column__right column__padding">
-                    <a href="#"></a><img src="img/frame.jpeg" alt="">
+                    <a href="#" class="bn-hover">
+                        <img src="img/img-prueba.jpg" alt="" class="image">
+                    </a> 
                     <div class="label">
                         <h4 class="label__title">Titulo proyecto</h4> 
                         <h4 class="label__category">Categorías proyecto</h4>    
@@ -115,14 +122,18 @@
 
             <article class="grid">
                 <div class="grid__cell--40 column__right column__padding">
-                    <a href="#"></a><img src="img/frame.jpeg" alt="">
+                    <a href="#" class="bn-hover">
+                        <img src="img/img-prueba.jpg" alt="" class="image">
+                    </a> 
                     <div class="label">
                         <h4 class="label__title">Titulo proyecto</h4> 
                         <h4 class="label__category">Categorías proyecto</h4>    
                     </div>                   
                 </div>    
                 <div class="grid__cell--40 column__padding">
-                    <a href="#"></a><img src="img/frame.jpeg" alt="">
+                    <a href="#" class="bn-hover">
+                        <img src="img/img-prueba.jpg" alt="" class="image">
+                    </a> 
                     <div class="label">
                         <h4 class="label__title">Titulo proyecto</h4> 
                         <h4 class="label__category">Categorías proyecto</h4>    
@@ -133,7 +144,7 @@
         <article class="grid column__padding--top--medium column__padding--bottom--medium">
             <div class="grid__cell--20"> 
             </div>
-            <div class="grid__cell--80  column__right column__padding">
+            <div class="grid__cell--60 column__right column__padding">
                 <h2 >Si te ha gustado mi portfolio dale a like <span><input type="checkbox" id="like"><label for="like"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
                 </span> y hagamos un proyecto</h2>
                 
@@ -142,7 +153,9 @@
                     <a class="buton__contact" href="contacto.html">¡Contacta conmigo!</a>
                 </div>
 
-            </div>      
+            </div>   
+            <div class="grid__cell--20"> 
+            </div>   
         </article>
         
     </main>

@@ -21,13 +21,13 @@
 .label {
     width: 100%;
     font-family: 'GeneralSans-Regular';
-    @include fontStyle (17px, 28px);
+    font-size: 1.2rem;
 }
 
 .input {
     width: 100%;
     font-family: 'GeneralSans-Regular';
-    @include fontStyle (17px, 28px);
+    font-size: 1.2rem;
 }
 
 .checkbox a  {

@@ -51,17 +51,6 @@ p {
     font-family: 'GeneralSans-Regular';
 }
 
-
-
-.h1__title--project {
-    @include fontStyle (70px, 80px);
-    font-family: 'GeneralSans-ExtralightItalic';
-    @media all and (max-width: 850px) {
-        @include fontStyle (30px, 40px);
-    }
-}
-
-
 h1,
 h2,
 h3,
@@ -73,49 +62,26 @@ p {
 }
 
 h1 {
-    @include fontStyle (70px, 70px);
-    @media all and (max-width: 850px) {
-        @include fontStyle (30px, 40px);
-    }
+    font-size: clamp(3rem, -0.875rem + 5vw, 6rem);
 }
 
 h2 {
-    @include fontStyle (40px, 50px);
-    @media all and (max-width: 850px) {
-        @include fontStyle (30px, 45px);
-    }
+    font-size: clamp(2.5rem, -0.875rem + 8.333vw, 3rem);
 }
 
 h3 {
-    @include fontStyle (25px, 35px);
-    @media all and (max-width: 850px) {
-        @include fontStyle (20px, 35px);
-    }
+    font-size: clamp(1.2rem, -0.875rem + 8.333vw, 1.7rem);
 
     a {
         text-decoration: none;
     }
 }
 
-h4 {
-    @include fontStyle (15px, 20px);
-    @media all and (max-width: 849px) {
-        @include fontStyle (13px, 25px);
-    }
-}
-
-h6 {
-    @include fontStyle (15px, 20px);
-    @media all and (max-width: 850px) {
-        @include fontStyle (15px, 25px);
-    }
-}
-
+h4,
+h6,
 p {
-    @include fontStyle (15px, 28px);
-    @media all and (max-width: 850px) {
-        @include fontStyle (15px, 25px);
-    }
+    font-size: 1.1rem;
+    line-height: 30px;
 }
 
 

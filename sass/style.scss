@@ -1,6 +1,5 @@
 @import "structure/grid";
 
-@import "utilities/functions";
 @import "utilities/mixins";
 @import "utilities/variables";
 @import "utilities/space-column";
@@ -14,14 +13,11 @@
 @import "htmlelements/gradient";
 @import "htmlelements/like";
 @import "htmlelements/project-related";
-@import "htmlelements/video";
 
-@import "layout/cards";
-@import "layout/footer";
 @import "layout/main";
 @import "layout/menu";
 
 @import "style/typo";
 @import "style/darkmode";
-@import "style/opacity-img";
+@import "style/bn-hover";
 

@@ -1,9 +1,10 @@
 .button {
 
     &__topbar {
-        background-color: $black;
+        font-size: 1.1rem;
+        font-family: 'GeneralSans-Regular';
+        text-decoration: none;
         border: none;
-        text-align: right;
         @media all and (max-width: 849px) {
             text-align: center;
         }
@@ -13,19 +14,28 @@
         }
 
         &--link {
-            @include fontStyle (15px, 25px);
-            font-family: 'GeneralSans-Regular';
-            text-decoration: none;
-            min-width: 150px;
+            min-width: 7%;
             text-align: right;
             cursor: pointer;
 
+            &--destok {
+                @media all and (max-width: 850px) {
+                    display: none;
+                }
+            }
+            }
+
+        &--title {
+            min-width: 50%;
         }
 
-        &--destok {
-            @media all and (max-width: 850px) {
-                display: none;
-            }
+        &--darkmode {
+            min-width: 4%;
+            text-align: right;
+            cursor: pointer;
+            > *:nth-child(1) {
+                margin-right: auto;
+        }
         }
         
     }
@@ -82,6 +92,19 @@ body.light__mode{
         border: 1px solid $black;
     }
 
+    .button__topbar--home,
+    .button__topbar--darkmode {
+        color: $black;
+    }
+
+    #link  a:active{
+        color: black;
+    }
+
+    .button__topbar a:target{
+        color: black;
+    }
+
     #slide {
         background: $black;
     }
@@ -98,6 +121,11 @@ body.dark__mode{
 
     #slide {
         background: $white;
+    }
+
+    .button__topbar--home,
+    .button__topbar--darkmode {
+        color: $white;
     }
 
     #button-contact:hover a {
