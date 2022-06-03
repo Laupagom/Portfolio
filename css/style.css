@@ -239,8 +239,18 @@ video {
   text-align: right;
   cursor: pointer;
 }
-@media all and (max-width: 850px) {
+@media all and (max-width: 1100px) {
+  .button__topbar--link {
+    padding-right: 20px;
+  }
+}
+@media all and (max-width: 650px) {
   .button__topbar--link--destok {
+    display: none;
+  }
+}
+@media all and (max-width: 550px) {
+  .button__topbar--link--destok-project {
     display: none;
   }
 }

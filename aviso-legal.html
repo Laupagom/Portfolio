@@ -10,24 +10,22 @@
 </head>
 <body id="body" class="dark__mode" oncontextmenu=return false; onmousedown=return false; onselectstart=return false;>
     
-    <!--FLOATING-->
-    <div class="floating"></div>
-    
-    <!-- HEAD -->
     <header>
         <nav class="topbar">
-                <a href="index.html" class="button__topbar button__topbar--home">Laura Parreño</a>
+                <a href="index.html" id="index" class="button__topbar button__topbar--home">Laura Parreño</a>
 
-                <a href="index.html" class="button__topbar  button__topbar--title">Base Viva 1/10</a>
+                <a href="index.html" id="index" class="button__topbar  button__topbar--title">Base Viva 1/10</a>
                 
-                <a href="index.html" class="button__topbar button__topbar--link--destok">Proyectos</a>                 
+                <a href="index.html" id="index" class="button__topbar button__topbar--link--destok">Proyectos</a>                 
 
-                <a href="contacto.html" class="button__topbar button__topbar--link">Contacto</a>
+                <a href="contacto.html" id="contacto" class="button__topbar button__topbar--link" id="link">Contacto</a>
 
                 <a class="button__topbar--darkmode" name="dark__light" onclick="toggleDarkLight()" title="Toggle dark/light mode">◐</a>
             </ul>       
         </nav>
     </header>
+
+    <!-- CONTENT -->
 
     <main>
         <article class="grid column__padding--bottom--small">
@@ -221,6 +219,8 @@
             </nav>
         </section>
     </footer>
+
+    <script src="./js/darkmode.js"></script>
 
 </body>
 </html>
