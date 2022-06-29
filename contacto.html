@@ -1,111 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-</head>
-<body id="body" class="dark__mode" oncontextmenu=return false; onmousedown=return false; onselectstart=return false;>
-    
-    <!-- HEAD -->
-    <header>
-        <nav class="topbar">
-                <a href="index.html" class="button__topbar button__topbar--home">Laura Parreño</a>
-                
-                <a href="index.html" class="button__topbar button__topbar--link--destok">Proyectos</a>                 
 
-                <a href="contacto.html" class="button__topbar button__topbar--link">Contacto</a>
-
-                <a class="button__topbar--darkmode" name="dark__light" onclick="toggleDarkLight()" title="Toggle dark/light mode">◐</a>
-            </ul>       
-        </nav>
-    </header>
-
-    <!-- CONTENT -->
-    <main>
-        <div class="column__fixed">
-            <section class="">
-                <h1 class="column__padding--bottom--small column__padding--top--medium">¡Hola, soy Laura!<br>Front-end Developer, Diseñadora UX/UI y gráfica.</h1>
-                <p class="column__padding--bottom--small">Me inicié en el mundo laboral en 2017. He colaborado en diferentes estudios especializados en el diseño de páginas web y marketing online. Actualmente trabajo de forma autónoma, aunque en un futuro me encantaría formar de nuevo parte de un equipo. Disfruto el diseño colaborativo, estableciendo la conversación como la herramienta más poderosa. Estoy convencida que es la mejor forma de obtener buenos resultados.
-                </p>
-                <div class="toggle">
-                    <ul>
-                        <li>
-                            <h3 class="menu__contact">Ampliar información</h3>
-                            <span>+</span>
-                            <div class="panel">
-                                <p>Me inicié en el mundo laboral en 2017. He colaborado en diferentes estudios especializados en el diseño de páginas web y marketing online. Actualmente trabajo de forma autónoma, aunque en un futuro me encantaría formar de nuevo parte de un equipo. Disfruto el diseño colaborativo, estableciendo la conversación como la herramienta más poderosa. Estoy convencida que es la mejor forma de obtener buenos resultados.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <nav class="grid menu__contact">
-                <ul class="grid__cell--50">
-                    <li class="button__contact--link">
-                        <a href="mailto:hola@lauraparreno.com" target="_blank">Mail</a>
-                    </li>
-                    <li class="button__contact--link">
-                        <a href="https://www.instagram.com/lau.site/" target="_blank">Instagram</a>
-                    </li>
-                    <li class="button__contact--link">
-                        <a href="https://www.linkedin.com/in/laura-parre%C3%B1o-g%C3%B3mez-bb38a120a/" target="_blank">Linkedin</a>
-                    </li>
-                    <li class="button__contact--link">
-                        <a href="https://github.com/Laupagom" target="_blank">GitHub</a>
-                    </li>
-                </ul>
-                <ul class="grid__cell--50 menu__contact--right">
-                    <li class="menu__contact--mobile">                        
-                        <div class="button__contact" id="button-contact">
-                            <div id="slide"></div>
-                            <a href="formulario.html">¿Hablamos?</a>
-                        </div>
-                    </li>
-                    
-                    <li class="menu__contact--cv button__contact--link menu__contact--mobile">
-                        <a href="#" target="_blank">Descargar CV</a>
-                    </li>
-                    
-                </ul>
-                
-            </nav>
-
-            <aside class="column__fixed--img"></aside>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
         
-        </div>
-        
-    </main>
+    </head>
 
-    <!-- FOOTER -->
-    <footer class="grid menu__footer">
-        <section class="grid__cell--50">
-            <h6>© 2022 By Laura Parreño <a href="aviso-legal.html">&nbsp;&nbsp;Aviso legal</a></h6>
-        </section>
-        <section class="grid__cell--50">
-            <nav menu__footer menu__footer--social>
-                <ul>
-                    <li>
-                        <h6><a href="mailto:hola@lauraparreno.com" target="_blank">Mail</a></h6>
-                    </li>
-                    <li>
-                        <h6><a href="https://www.instagram.com/lau.site/" target="_blank">Instagram</a></h6>
-                    </li>
-                    <li>
-                        <h6><a href="https://www.linkedin.com/in/laura-parre%C3%B1o-g%C3%B3mez-bb38a120a/" target="_blank">Linkedin</a></h6>                    
-                    </li>
+    <body id="body" class="dark__mode" oncontextmenu=return false; onmousedown=return false; onselectstart=return false;>
+        
+        <!-- HEAD -->
+        <header>
+            <nav class="topbar">
+                    <a href="index.html" class="button__topbar button__topbar--home">Laura Parreño</a>
+                    
+                    <a href="index.html" class="button__topbar button__topbar--link--destok">Proyectos</a>                 
+
+                    <a href="contacto.html" class="button__topbar button__topbar--link">Contacto</a>
+
+                    <a class="button__topbar--darkmode" name="dark__light" onclick="toggleDarkLight()" title="Toggle dark/light mode">◐</a>
                 </ul>       
             </nav>
-        </section>
-    </footer>
+        </header>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="./js/darkmode.js"></script>
-    <script src="./js/toggle.js"></script>
+        <!-- CONTENT -->
+        <main>
+            <section class="column__fixed">
+                <div>
+                    <h1 class="column__padding--bottom--small column__padding--top--medium">¡Hola, soy Laura!<br>Front-end Developer, Diseñadora UX/UI y gráfica.</h1>
+                    <p class="column__padding--bottom--small">Me inicié en el mundo laboral en 2017. He colaborado en diferentes estudios especializados en el diseño de páginas web y marketing online. Actualmente trabajo de forma autónoma, aunque en un futuro me encantaría formar de nuevo parte de un equipo. Disfruto el diseño colaborativo, estableciendo la conversación como la herramienta más poderosa. Estoy convencida que es la mejor forma de obtener buenos resultados.
+                    </p>
+                    <div class="toggle">
+                        <ul>
+                            <li>
+                                <h3 class="menu__contact">Ampliar información</h3>
+                                <span>+</span>
+                                <div class="panel">
+                                    <p>Me inicié en el mundo laboral en 2017. He colaborado en diferentes estudios especializados en el diseño de páginas web y marketing online. Actualmente trabajo de forma autónoma, aunque en un futuro me encantaría formar de nuevo parte de un equipo. Disfruto el diseño colaborativo, estableciendo la conversación como la herramienta más poderosa. Estoy convencida que es la mejor forma de obtener buenos resultados.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-</body>
+                <nav class="grid menu__contact">
+                    <ul class="grid__cell--50">
+                        <li class="button__contact--link">
+                            <a href="mailto:hola@lauraparreno.com" target="_blank">Mail</a>
+                        </li>
+                        <li class="button__contact--link">
+                            <a href="https://www.instagram.com/lau.site/" target="_blank">Instagram</a>
+                        </li>
+                        <li class="button__contact--link">
+                            <a href="https://www.linkedin.com/in/laura-parre%C3%B1o-g%C3%B3mez-bb38a120a/" target="_blank">Linkedin</a>
+                        </li>
+                        <li class="button__contact--link">
+                            <a href="https://github.com/Laupagom" target="_blank">GitHub</a>
+                        </li>
+                    </ul>
+                    <ul class="grid__cell--50 menu__contact--right">
+                        <li class="menu__contact--mobile">                        
+                            <div class="button__contact" id="button-contact">
+                                <div id="slide"></div>
+                                <a href="formulario.html">¿Hablamos?</a>
+                            </div>
+                        </li>
+                        
+                        <li class="menu__contact--cv button__contact--link menu__contact--mobile">
+                            <a href="#" target="_blank">Descargar CV</a>
+                        </li>
+                        
+                    </ul>
+                    
+                </nav>
+
+                <aside class="column__fixed--img"></aside>
+            
+            </section>
+            
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="grid menu__footer">
+
+            <div class="grid__cell--50">
+                <h6>© 2022 By Laura Parreño <a href="aviso-legal.html">&nbsp;&nbsp;Aviso legal</a></h6>
+            </div>
+
+            <div class="grid__cell--50">
+                <nav menu__footer menu__footer--social>
+                    <ul>
+                        <li>
+                            <h6><a href="mailto:hola@lauraparreno.com" target="_blank">Mail</a></h6>
+                        </li>
+                        <li>
+                            <h6><a href="https://www.instagram.com/lau.site/" target="_blank">Instagram</a></h6>
+                        </li>
+                        <li>
+                            <h6><a href="https://www.linkedin.com/in/laura-parre%C3%B1o-g%C3%B3mez-bb38a120a/" target="_blank">Linkedin</a></h6>                    
+                        </li>
+                    </ul>       
+                </nav>
+            </div>
+            
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="./js/darkmode.js"></script>
+        <script src="./js/toggle.js"></script>
+
+    </body>
 </html>

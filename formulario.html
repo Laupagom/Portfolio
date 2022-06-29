@@ -1,100 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-</head>
-<body id="body" class="dark__mode" oncontextmenu=return false; onmousedown=return false; onselectstart=return false;>
-    
-    <!-- HEAD -->
-    <header>
-        <nav class="topbar">
-                <a href="index.html" class="button__topbar button__topbar--home">Laura Parreño</a>
-                
-                <a href="index.html" class="button__topbar button__topbar--link--destok">Proyectos</a>                 
-
-                <a href="contacto.html" class="button__topbar button__topbar--link">Contacto</a>
-
-                <a class="button__topbar--darkmode" name="dark__light" onclick="toggleDarkLight()" title="Toggle dark/light mode">◐</a>
-            </ul>       
-        </nav>
-    </header>
-
-    <!-- CONTENT -->
-    <main class="gradient">
-        <article class="grid grid__center">
-            <section class="grid__cell--40 menu__contact ">
-                <h1 class="column__padding--bottom--small column__padding--top--big--mobile">¡Completa el formulario y  te escribo pronto!</h1>
-                <ul>
-                    <li class="button__contact--link column__padding--bottom--small">
-                        <a href="mailto:hola@lauraparreno.com" target="_blank">hola@lauraparreno.com</a>
-                    </li>
-                </ul>
-            </section>
-
-
-
-            <article class="grid__cell--60 form">
-                <section class="form__background">
-
-                                <div class="group">
-                                    <label for="nombre" class="label">Nombre</label>
-                                    <input id="nombre" type="text" class="input" placeholder="¿Cuál es tu nombre?">
-                                </div>
-
-                                <div class="group">
-                                    <label for="mail" class="label">E-mail</label>
-                                    <input id="mail" type="email" class="input" placeholder="¿Y tu e-mail?">
-                                </div>
-
-                                <div class="group">
-                                    <label for="mensaje" class="label">Mensaje</label>
-                                    <textarea id="mensaje" type="textarea" class="input" rows="2" cols="200" placeholder="Escribe tu mensaje..."></textarea>
-                                </div>
-                                
-                                <div class="group">
-                                    <input class="checkbox" type="checkbox" name="checks">
-                                    <label class="checkbox" class="label"><h6>Acepto la <a href="http://localhost:8848/privacity/privacy-policy.html" class="links">política de privacidad</a> de esta página</h6></label>
-                                </div>
-                                <div class="button__contact menu__contact menu__contact--index margin-top" id="button-contact">
-                                    <div id="slide"></div>
-                                    <a class="buton__contact" href="#">Enviar mensaje</a>
-                                </div>
-                </section>
-                
-            </article>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
         
-        </article>
+    </head>
+    <body id="body" class="dark__mode" oncontextmenu=return false; onmousedown=return false; onselectstart=return false;>
+        
+        <!-- HEAD -->
+        <header>
+            <nav class="topbar">
+                    <a href="index.html" class="button__topbar button__topbar--home">Laura Parreño</a>
+                    
+                    <a href="index.html" class="button__topbar button__topbar--link--destok">Proyectos</a>                 
 
-    </main>
+                    <a href="contacto.html" class="button__topbar button__topbar--link">Contacto</a>
 
-    <!-- FOOTER -->
-    <footer class="grid menu__footer">
-        <section class="grid__cell--50">
-            <h6>© 2022 By Laura Parreño <a href="aviso-legal.html">&nbsp;&nbsp;Aviso legal</a></h6>
-        </section>
-        <section class="grid__cell--50">
-            <nav menu__footer menu__footer--social>
-                <ul>
-                    <li>
-                        <h6><a href="mailto:hola@lauraparreno.com" target="_blank">Mail</a></h6>
-                    </li>
-                    <li>
-                        <h6><a href="https://www.instagram.com/lau.site/" target="_blank">Instagram</a></h6>
-                    </li>
-                    <li>
-                        <h6><a href="https://www.linkedin.com/in/laura-parre%C3%B1o-g%C3%B3mez-bb38a120a/" target="_blank">Linkedin</a></h6>                    
-                    </li>
+                    <a class="button__topbar--darkmode" name="dark__light" onclick="toggleDarkLight()" title="Toggle dark/light mode">◐</a>
                 </ul>       
             </nav>
-        </section>
-    </footer>
+        </header>
 
-    <script src="./js/darkmode.js"></script>
+        <!-- CONTENT -->
+        <main class="gradient">
 
-</body>
+            <section class="grid grid__center">
+
+                <div class="grid__cell--40 menu__contact ">
+                    <h1 class="column__padding--bottom--small column__padding--top--big--mobile">¡Completa el formulario y  te escribo pronto!</h1>
+                    <ul>
+                        <li class="button__contact--link column__padding--bottom--small">
+                            <a href="mailto:hola@lauraparreno.com" target="_blank">hola@lauraparreno.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid__cell--60 form">
+
+                    <div class="form__background">
+
+                        <div class="group">
+                            <label for="nombre" class="label">Nombre</label>
+                            <input id="nombre" type="text" class="input" placeholder="¿Cuál es tu nombre?">
+                        </div>
+
+                        <div class="group">
+                            <label for="mail" class="label">E-mail</label>
+                            <input id="mail" type="email" class="input" placeholder="¿Y tu e-mail?">
+                        </div>
+
+                        <div class="group">
+                            <label for="mensaje" class="label">Mensaje</label>
+                            <textarea id="mensaje" type="textarea" class="input" rows="2" cols="200" placeholder="Escribe tu mensaje..."></textarea>
+                        </div>
+                        
+                        <div class="group">
+                            <input class="checkbox" type="checkbox" name="checks">
+                            <label class="checkbox" class="label"><h6>Acepto la <a href="http://localhost:8848/privacity/privacy-policy.html" class="links">política de privacidad</a> de esta página</h6></label>
+                        </div>
+                        <div class="button__contact menu__contact menu__contact--index margin-top" id="button-contact">
+                            <div id="slide"></div>
+                            <a class="buton__contact" href="#">Enviar mensaje</a>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            
+            </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="grid menu__footer">
+
+            <section class="grid__cell--50">
+                <h6>© 2022 By Laura Parreño <a href="aviso-legal.html">&nbsp;&nbsp;Aviso legal</a></h6>
+            </section>
+
+            <section class="grid__cell--50">
+                <nav menu__footer menu__footer--social>
+                    <ul>
+                        <li>
+                            <h6><a href="mailto:hola@lauraparreno.com" target="_blank">Mail</a></h6>
+                        </li>
+                        <li>
+                            <h6><a href="https://www.instagram.com/lau.site/" target="_blank">Instagram</a></h6>
+                        </li>
+                        <li>
+                            <h6><a href="https://www.linkedin.com/in/laura-parre%C3%B1o-g%C3%B3mez-bb38a120a/" target="_blank">Linkedin</a></h6>                    
+                        </li>
+                    </ul>       
+                </nav>
+            </section>
+            
+        </footer>
+
+        <script src="./js/darkmode.js"></script>
+
+    </body>
 </html>
